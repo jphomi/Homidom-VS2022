@@ -1,0 +1,9 @@
+G:\HoMIDoM\HoMIOAuth2\bin\Debug\HoMIOAuth2.dll
+G:\HoMIDoM\HoMIOAuth2\bin\Debug\HoMIOAuth2.pdb
+G:\HoMIDoM\HoMIOAuth2\bin\Debug\HoMIOAuth2.xml
+G:\HoMIDoM\HoMIOAuth2\obj\Debug\HoMIOAuth2.vbprojResolveAssemblyReference.cache
+G:\HoMIDoM\HoMIOAuth2\obj\Debug\HoMIOAuth2.Resources.resources
+G:\HoMIDoM\HoMIOAuth2\obj\Debug\HoMIOAuth2.vbproj.GenerateResource.Cache
+G:\HoMIDoM\HoMIOAuth2\obj\Debug\HoMIOAuth2.dll
+G:\HoMIDoM\HoMIOAuth2\obj\Debug\HoMIOAuth2.xml
+G:\HoMIDoM\HoMIOAuth2\obj\Debug\HoMIOAuth2.pdb

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HoMIOAuth2
+</name>
+</assembly>
+<members>
+<member name="T:HoMIOAuth2.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+<member name="P:HoMIOAuth2.My.Resources.Resources.ResourceManager">
+<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member>
+<member name="P:HoMIOAuth2.My.Resources.Resources.Culture">
+<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member>
+<member name="T:HoMIOAuth2.Authentication">
+ <summary>Class Authentication, Défini le type pour les autorisations</summary>
+</member>
+<member name="P:HoMIOAuth2.Authentication.Nom">
+ <summary>
+ Nom de cette autorisation
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:HoMIOAuth2.Authentication.access_token">
+ <summary>
+ access_token de cette autorisation
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:HoMIOAuth2.Authentication.refresh_token">
+ <summary>
+ refresh token de cette autorisation
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:HoMIOAuth2.Authentication.expires_in">
+ <summary>
+ expiration du access_token de cette autorisation
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:HoMIOAuth2.web">
+ <summary>Class installed, Défini le type des données clients</summary>
+</member>
+<member name="P:HoMIOAuth2.web.client_secret">
+ <summary>
+ client_secret pour ce client
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:HoMIOAuth2.web.redirect_uris">
+ <summary>
+ redirect_uris pour ce client
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:HoMIOAuth2.web.client_id">
+ <summary>
+client_id pour ce client
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:HoMIOAuth2.web.token_uri">
+ <summary>
+ token_uri pour ce client
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:HoMIOAuth2.ClientOAuth2">
+ <summary>Class ClientOAuth2, Défini le type pour le client OAuth2</summary>
+</member>
+<member name="P:HoMIOAuth2.ClientOAuth2.Nom">
+ <summary>
+ Nom de ce client
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:HoMIOAuth2.ClientOAuth2.web">
+ <summary>
+client_id pour ce client
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

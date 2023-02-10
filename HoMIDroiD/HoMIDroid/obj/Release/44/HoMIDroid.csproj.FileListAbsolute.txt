@@ -1,0 +1,7 @@
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HoMIDroiD\HoMIDroid\obj\Release\44\MonoAndroid,Version=v4.4.AssemblyAttributes.cs
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HoMIDroiD\HoMIDroid\obj\Release\44\build.props
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HoMIDroiD\HoMIDroid\obj\Release\44\adb.props
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HoMIDroiD\HoMIDroid\obj\Release\44\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HoMIDroiD\HoMIDroid\obj\Release\44\resourcepaths.cache
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HoMIDroiD\HoMIDroid\obj\Release\44\resourcecache.stamp
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HoMIDroiD\HoMIDroid\obj\Release\44\res.flag

@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6bb2f741-f077-4d87-90c5-619af11786ff": {
+      "ProjectGuid": "6bb2f741-f077-4d87-90c5-619af11786ff",
+      "DisplayName": "HoMIAdmiN",
+      "ColorIndex": 0
+    },
+    "b2e1a76d-ccd9-4c87-b0a2-fa23396d78d0": {
+      "ProjectGuid": "b2e1a76d-ccd9-4c87-b0a2-fa23396d78d0",
+      "DisplayName": "HoMIWpF",
+      "ColorIndex": 1
+    },
+    "37b0a6ac-01e4-46ee-83df-c4b8e91e3633": {
+      "ProjectGuid": "37b0a6ac-01e4-46ee-83df-c4b8e91e3633",
+      "DisplayName": "HoMIDomService",
+      "ColorIndex": 2
+    },
+    "96963754-902f-4f02-ab66-d06a0d2e3242": {
+      "ProjectGuid": "96963754-902f-4f02-ab66-d06a0d2e3242",
+      "DisplayName": "HoMIDomWebAPI",
+      "ColorIndex": 3
+    },
+    "1f0ce8b5-5ba9-4704-8b5e-52682635f803": {
+      "ProjectGuid": "1f0ce8b5-5ba9-4704-8b5e-52682635f803",
+      "DisplayName": "HoMIDom",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

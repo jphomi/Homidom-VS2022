@@ -1,0 +1,9 @@
+C:\Users\JP\Documents\GitHub\JP-Homidom\DEBUG\HoMIDom.dll
+C:\Users\JP\Documents\GitHub\JP-Homidom\DEBUG\HoMIDom.pdb
+C:\Users\JP\Documents\GitHub\JP-Homidom\DEBUG\HoMIDom.xml
+C:\Users\JP\Documents\GitHub\JP-Homidom\HoMIDom\obj\Debug\HoMIDom.vbprojResolveAssemblyReference.cache
+C:\Users\JP\Documents\GitHub\JP-Homidom\HoMIDom\obj\Debug\HoMIDom.Resources.resources
+C:\Users\JP\Documents\GitHub\JP-Homidom\HoMIDom\obj\Debug\HoMIDom.vbproj.GenerateResource.Cache
+C:\Users\JP\Documents\GitHub\JP-Homidom\HoMIDom\obj\Debug\HoMIDom.dll
+C:\Users\JP\Documents\GitHub\JP-Homidom\HoMIDom\obj\Debug\HoMIDom.xml
+C:\Users\JP\Documents\GitHub\JP-Homidom\HoMIDom\obj\Debug\HoMIDom.pdb

@@ -1,0 +1,168 @@
+04/05/2021 22:54:01	INFO	SERVEUR	INFO	Version de la dll Homidom: 1.3.0.0
+04/05/2021 22:54:01	INFO	SERVEUR	INFO	Version de l'OS: Microsoft Windows 10 Famille 64 Bits
+04/05/2021 22:54:01	INFO	SERVEUR	INFO	Version du Framework: 4.6 (4.0.30319.42000)
+04/05/2021 22:54:01	INFO	SERVEUR	INFO	Répertoire utilisé: C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\RELEASE
+04/05/2021 22:54:01	INFO	SERVEUR	INFO	Adresse IP du serveur: 192.168.0.11
+04/05/2021 22:54:01	INFO	SERVEUR	INFO	Séparateur décimal CurrentCulture: '.'
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	Chargement des DLL des drivers :
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - AlertesAtmo chargé (Version : 1.3.0.0 - 3264 - Driver_AlertesAtmo.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - APC chargé (Version : 1.3.0.0 - 3264 - Driver_APC.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - Arduino chargé (Version : 1.3.0.0 - 3264 - Driver_Arduino.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - Arduino HTTP chargé (Version : 1.3.0.0 - 3264 - Driver_Arduino_HTTP.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - BDD chargé (Version : 1.3.0.0 - 3264 - Driver_BDD.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - CurrentCost chargé (Version : 1.3.0.0 - 3264 - Driver_CurrentCost.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - DMX non chargé, Platforme 64 non géré (Version : 1.3.0.0 - 32 - Driver_DMX.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - EnOcean chargé (Version : 1.0.3.0 - 3264 - Driver_Enocean.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - Envoy chargé (Version : 1.3.0.0 - 3264 - Driver_Envoy.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - Foobar chargé (Version : 1.3.0.0 - 3264 - Driver_Foobar.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - Freebox chargé (Version : 1.3.0.0 - 3264 - Driver_Freebox.dll)
+04/05/2021 22:54:01	INFO	SERVEUR	Drivers_Load	 - GoogleCalendar chargé (Version : 1.3.0.0 - 3264 - Driver_GoogleCalendar.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - GoogleMessages chargé (Version : 1.3.0.0 - 3264 - Driver_GoogleMessages.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - GSM chargé (Version : 1.3.0.0 - 3264 - Driver_Gsm.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - HOMESEER non chargé, Platforme 64 non géré (Version : 1.3.0.0 - 32 - Driver_HomeSeer.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - HTTP chargé (Version : 1.3.0.0 - 3264 - Driver_http.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - HuaweiUsb chargé (Version : 1.3.0.0 - 3264 - Driver_HuaweiUsb.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Hue chargé (Version : 1.3.0.0 - 3264 - Driver_hue.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - ImperiHome chargé (Version : 1.2.2.0 - 3264 - Driver_ImperiHome.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - InfoClimat chargé (Version : 1.3.0.0 - 3264 - Driver_InfoClimat.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - IPX800 chargé (Version : 1.3.0.0 - 3264 - Driver_IPX800.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Jeedom chargé (Version : 1.3.0.0 - 3264 - Driver_Jeedom.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - K8000 non chargé, Platforme 64 non géré (Version : 1.3.0.0 - 32 - Driver_k8000.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - K8055 non chargé, Platforme 64 non géré (Version : 1.3.0.0 - 32 - Driver_k8055.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - K8056 non chargé, Platforme 64 non géré (Version : 1.3.0.0 - 32 - Driver_k8056.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - KNX EIBD chargé (Version : 1.3.0.0 - 3264 - Driver_KNX.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Linky chargé (Version : 1.3.0.0 - 3264 - Driver_Linky.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Mail chargé (Version : 1.3.0.0 - 3264 - Driver_Mail.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - RFID-Mirror chargé (Version : 1.3.0.0 - 3264 - Driver_Mirror.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - ModbusTCP chargé (Version : 1.3.0.0 - 3264 - Driver_ModbusTCP.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - MySensors chargé (Version : 1.0.0.0 - 3264 - Driver_MySensors.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Nest chargé (Version : 1.3.0.0 - 3264 - Driver_Nest.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Netatmo chargé (Version : 1.3.0.0 - 3264 - Driver_Netatmo.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - 1-Wire chargé (Version : 1.3.0.0 - 3264 - Driver_onewire.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Meteo_OpenWeatherMap chargé (Version : 1.3.0.2 - 3264 - Driver_OpenWeatherMap.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - OpenWebNet IP chargé (Version : 1.3.0.0 - 3264 - Driver_OpenWebNet_IP.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - OpenWebNet USB chargé (Version : 1.3.0.0 - 3264 - Driver_OpenWebNet_USB.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Oregon Scientific chargé (Version : 1.3.0.0 - 3264 - Driver_OregonS.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Phidget InterfaceKit chargé (Version : 1.3.0.0 - 3264 - Driver_Phidget.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Phidget SBC chargé (Version : 1.3.0.0 - 3264 - Driver_PhidgetSBC.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - PLCBUS chargé (Version : 1.3.0.0 - 3264 - Driver_PLCBUS.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - RFPlayer chargé (Version : 1.0.3.0 - 3264 - Driver_RFPlayer.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - RFXMitter chargé (Version : 1.3.0.0 - 3264 - Driver_RFXMitter.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - RFXreceiver chargé (Version : 1.3.0.0 - 3264 - Driver_RFXReceiver.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - RFXtrx chargé (Version : 1.3.0.0 - 3264 - Driver_RFXtrx.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - SenCrop chargé (Version : 1.3.0.0 - 3264 - Driver_SenCrop.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - SMS chargé (Version : 1.3.0.0 - 3264 - Driver_Sms.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - System chargé (Version : 1.3.0.0 - 3264 - Driver_System.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Teleinfo chargé (Version : 1.3.0.0 - 3264 - Driver_teleinfo.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Teracom chargé (Version : 1.3.0.0 - 3264 - Driver_Teracom.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - USBuirt chargé (Version : 1.3.0.0 - 3264 - Driver_USBuirt.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Virtuel chargé (Version : 1.3.0.0 - 3264 - Driver_Virtuel.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Wattlet chargé (Version : 1.3.0.0 - 3264 - Driver_Wattlet.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - MeteoWeather chargé (Version : 1.3.0.0 - 3264 - Driver_Weather.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - WES chargé (Version : 1.2.2.0 - 3264 - Driver_WES.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - X10 CM11 chargé (Version : 1.3.0.0 - 3264 - Driver_X10_CM11.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - X10 CM15 non chargé, Platforme 64 non géré (Version : 1.3.0.0 - 32 - Driver_X10_CM15.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - ZIBASE chargé (Version : 1.3.0.0 - 3264 - Driver_Zibase.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Zigbee chargé (Version : 1.0.3.0 - 3264 - Driver_Zigbee.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Load	 - Z-Wave chargé (Version : 1.0.3.0 - 3264 - Driver_Zwave.dll)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Création du backup (.bak) du fichier de config avant chargement
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement du fichier config: C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\RELEASE\Config\homidom.xml
+04/05/2021 22:54:02	DEBUG	SERVEUR	GererEnergie	Activation=False
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Paramètres du serveur chargés
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement des drivers :
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 - Virtuel chargé
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement des zones :
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> Aucune zone enregistrée dans le fichier de config
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> 0 Zone(s) chargée(s)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement des variables :
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> 0 Variables(s) chargée(s)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement des users :
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> 2 Utilisateur(s) chargé(s)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement des nouveaux devices détectés:
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> 0 nouveau(x) chargé(s)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement des composants :
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 - HOMI_Jour (soleil01 - N/A - GENERIQUEBOOLEEN) --> True
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 - HOMI_StartServeur (startsrv01 - N/A - GENERIQUEBOOLEEN)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 - HOMI_EnergieTotaleInstantanee (energietotale01 - N/A - GENERIQUEVALUE)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 - HOMI_IsWeekend (isweekend01 - N/A - GENERIQUEBOOLEEN)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 - HOMI_Saint (saint01 - N/A - GENERIQUESTRING)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> 5 composant(s) trouvé(s)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement des triggers :
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> Aucun trigger enregistré dans le fichier de config
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> 0 Trigger(s) chargé(s)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	Chargement des macros :
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> Aucune macro enregistrée dans le fichier de config
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 -> 0 Macro(s) chargée(s)
+04/05/2021 22:54:02	INFO	SERVEUR	LoadConfig	 Chargement de la configuration terminée
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	Démarrage des drivers :
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - AlertesAtmo non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - APC non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Arduino non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Arduino HTTP non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - BDD non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - CurrentCost non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - EnOcean non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Envoy non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Foobar non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Freebox non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - GoogleCalendar non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - GoogleMessages non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - GSM non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - HTTP non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - HuaweiUsb non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Hue non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - ImperiHome non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - InfoClimat non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - IPX800 non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Jeedom non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - KNX EIBD non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Linky non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Mail non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - RFID-Mirror non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - ModbusTCP non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - MySensors non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Nest non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Netatmo non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - 1-Wire non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Meteo_OpenWeatherMap non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - OpenWebNet IP non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - OpenWebNet USB non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Oregon Scientific non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Phidget InterfaceKit non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Phidget SBC non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - PLCBUS non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - RFPlayer non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - RFXMitter non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - RFXreceiver non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - RFXtrx non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - SenCrop non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - SMS non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - System non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Teleinfo non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Teracom non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - USBuirt non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Virtuel démarré
+04/05/2021 22:54:02	INFO	DRIVER	Virtuel Start	Driver Virtuel démarré
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Wattlet non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - MeteoWeather non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - WES non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - X10 CM11 non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - ZIBASE non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Zigbee non démarré car non Auto
+04/05/2021 22:54:02	INFO	SERVEUR	Drivers_Start	 - Z-Wave non démarré car non Auto
+04/05/2021 22:54:03	INFO	SERVEUR	MAJ_HeuresSoleil	Initialisation des heures du soleil
+04/05/2021 22:54:03	INFO	SERVEUR	MAJ_HeuresSoleil	Heure du lever : 04/05/2021 06:09:00
+04/05/2021 22:54:03	INFO	SERVEUR	MAJ_HeuresSoleil	Heure du coucher : 04/05/2021 20:56:36
+04/05/2021 22:54:03	INFO	SERVEUR	StartUDP	Démarrage du serveur UDP sur le port: 7998
+04/05/2021 22:54:03	INFO	SERVEUR	Start	Serveur UDP démarré sur le port:7998
+04/05/2021 22:54:03	INFO	SERVEUR	CleanLog	0 Fichier(s) log supprimé(s) ( < 2 mois = 04/03/2021)
+04/05/2021 22:54:03	INFO	SERVEUR	Start	Serveur démarré
+04/05/2021 22:54:03	INFO	SERVEUR	INFO	Version du moteur SQLlite: 3.7.14
+04/05/2021 22:54:03	INFO	SERVEUR	INFO	Version de la BDD HoMIDoM: 2
+04/05/2021 22:54:04	DEBUG	SERVEUR	Start SequenceServer	N°: d274e96a-5d83-4502-96c5-bade3af6e597
+04/05/2021 22:54:04	DEBUG	SERVEUR	Start SequenceDriver	N°: 764f6afc-2c41-478c-88d9-ae8948517e3e
+04/05/2021 22:54:04	DEBUG	SERVEUR	Start SequenceDevice	N°: 6dbf26c8-a395-453b-afd0-06c8b03826d2
+04/05/2021 22:54:04	DEBUG	SERVEUR	Start SequenceZone	N°: 34341040-7c11-437f-b064-7dcdb92c8bd6
+04/05/2021 22:54:04	DEBUG	SERVEUR	Start SequenceTrigger	N°: 253b0976-3e8e-4692-9ba6-2675998c94ae
+04/05/2021 22:54:04	DEBUG	SERVEUR	Start SequenceMacro	N°: 2bb1530f-3659-4716-b557-05e32a6c9df1
+04/05/2021 22:54:04	VALEUR_CHANGE	DEVICE	DeviceBool Value	HOMI_StartServeur : N/A : True

@@ -1,0 +1,13 @@
+24/06/2021 22:41:46	INFO	CLIENT	LoadConfig	Création du backup (.bak) du fichier de config avant chargement
+24/06/2021 22:41:46	INFO	CLIENT	LoadConfig	Chargement du fichier config: C:\ProgramData\HoMIWpF\Config\HoMIWpF.xml
+24/06/2021 22:41:46	INFO	CLIENT	LoadConfig	Paramètres du client WPF chargés
+24/06/2021 22:41:47	INFO	CLIENT	LoadConfig	Paramètres tactiles chargés
+24/06/2021 22:41:47	INFO	CLIENT	LoadConfig	Paramètres de l'interface chargés
+24/06/2021 22:41:47	INFO	CLIENT	LoadConfig	Menus chargés
+24/06/2021 22:41:48	INFO	CLIENT	LoadConfig	Eléments chargés
+24/06/2021 22:41:48	INFO	CLIENT	LOADCONFIG	Message:  Chargement de la configuration terminée
+24/06/2021 22:41:52	INFO	CLIENT	SaveConfig	Sauvegarde de la config sous le fichier C:\ProgramData\HoMIWpF\Config\HoMIWpF.xml
+24/06/2021 22:41:52	INFO	CLIENT	SaveConfig	Création de sauvegarde (.sav) du fichier de config avant sauvegarde
+24/06/2021 22:41:53	INFO	CLIENT	SaveConfig	Sauvegarde des paramètres du client WPF
+24/06/2021 22:41:53	INFO	CLIENT	SaveConfig	Sauvegarde terminée
+24/06/2021 22:41:53	INFO	CLIENT	Client	Fermeture de l'application

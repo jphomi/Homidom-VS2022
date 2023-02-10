@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.homidom.homidroid" android:versionCode="6" android:versionName="0.5">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="HoMIDroid" android:icon="@drawable/icon" android:name="crc6413c9890f0694d7d9.HmdApp" android:allowBackup="true">
+    <activity android:configChanges="orientation" android:label="HoMIDroid - Device Info" android:name="crc6413c9890f0694d7d9.ListDevice2" />
+    <activity android:configChanges="orientation" android:label="HoMIDroid" android:name="crc6413c9890f0694d7d9.MainActivity" />
+    <activity android:configChanges="orientation" android:label="HoMIDroid - Devices" android:name="crc6413c9890f0694d7d9.ListDevice" />
+    <activity android:label="HoMIDroid - Connections" android:noHistory="true" android:name="crc645c35363e850b5894.ConnectionManager" />
+    <activity android:configChanges="orientation" android:label="HoMIDroid - View DIM Device" android:name="crc645c35363e850b5894.DeviceDim" />
+    <activity android:configChanges="orientation" android:label="HoMIDroid - View device" android:name="crc645c35363e850b5894.DeviceOnOff" />
+    <activity android:configChanges="orientation" android:label="HoMIDroid - Macros" android:name="crc645c35363e850b5894.ListMacro" />
+    <activity android:icon="@drawable/icon" android:label="HoMIDroid" android:noHistory="true" android:name="crc645c35363e850b5894.Login">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="orientation" android:label="HoMIDroid - Devices" android:name="crc645c35363e850b5894.ListGroupDevice" />
+    <activity android:configChanges="orientation" android:label="HoMIDroid - Zone" android:name="crc645c35363e850b5894.ZoneContent" />
+    <activity android:configChanges="orientation" android:label="HoMIDroid - Zones" android:name="crc645c35363e850b5894.ListZone" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.homidom.homidroid.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="28" />
+</manifest>

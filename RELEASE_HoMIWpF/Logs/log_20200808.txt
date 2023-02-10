@@ -1,0 +1,12 @@
+08/08/2020 17:34:51	ERREUR	CLIENT	LoadConfig	Erreur lors du lancement de l'application: L'accès au chemin d'accès 'C:\ProgramData\HoMIWpF\Config\HoMIWpF.bak' est refusé.
+08/08/2020 17:34:51	INFO	CLIENT	LoadConfig	Chargement du fichier config: C:\ProgramData\HoMIWpF\Config\HoMIWpF.xml
+08/08/2020 17:34:51	INFO	CLIENT	LoadConfig	Paramètres du client WPF chargés
+08/08/2020 17:34:52	INFO	CLIENT	LoadConfig	Paramètres tactiles chargés
+08/08/2020 17:34:52	INFO	CLIENT	LoadConfig	Paramètres de l'interface chargés
+08/08/2020 17:34:52	INFO	CLIENT	LoadConfig	Menus chargés
+08/08/2020 17:34:53	INFO	CLIENT	LoadConfig	Eléments chargés
+08/08/2020 17:34:53	INFO	CLIENT	LOADCONFIG	Message:  Chargement de la configuration terminée
+08/08/2020 17:37:24	INFO	CLIENT	SaveConfig	Sauvegarde de la config sous le fichier C:\ProgramData\HoMIWpF\Config\HoMIWpF.xml
+08/08/2020 17:37:24	ERREUR	CLIENT	SaveConfig	Erreur impossible de créer une copie de backup du fichier de config: L'accès au chemin d'accès 'C:\ProgramData\HoMIWpF\Config\HoMIWpF.sav' est refusé.
+08/08/2020 17:37:25	ERREUR	CLIENT	SaveConfig	ERREUR SAVECONFIG L'accès au chemin d'accès 'C:\ProgramData\HoMIWpF\Config\HoMIWpF.xml' est refusé.
+08/08/2020 17:37:25	INFO	CLIENT	Client	Fermeture de l'application

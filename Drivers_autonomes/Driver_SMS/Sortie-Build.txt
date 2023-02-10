@@ -1,0 +1,5 @@
+﻿1>------ Début de la génération : Projet : Driver_Sms, Configuration : Release Any CPU ------
+1>C:\Users\Jean-Pascal\Documents\GitHub\JP-Homidom-VS2019\Drivers_autonomes\Driver_SMS\Driver_Sms.vb(960,5): warning BC42105: La fonction 'CheckExistingEmails' ne retourne pas une valeur pour tous les chemins du code. Une exception de référence null peut se produire au moment de l'exécution lorsque le résultat est utilisé.
+1>C:\Users\Jean-Pascal\Documents\GitHub\JP-Homidom-VS2019\Drivers_autonomes\Driver_SMS\Driver_Sms.vb(984,5): warning BC42353: La fonction 'IsConnected' ne retourne pas une valeur pour tous les chemins du code. Une instruction 'Return' est-elle manquante ?
+1>  Driver_Sms -> C:\Users\Jean-Pascal\Documents\GitHub\JP-Homidom-VS2019\RELEASE\Drivers\Driver_Sms.dll
+========== Génération : 1 a réussi, 0 a échoué, 0 mis à jour, 0 a été ignoré ==========

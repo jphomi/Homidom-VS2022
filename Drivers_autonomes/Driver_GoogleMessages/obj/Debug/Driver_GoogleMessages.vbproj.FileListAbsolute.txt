@@ -1,0 +1,3 @@
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers_autonomes\Driver_GoogleMessages\obj\Debug\Driver_GoogleMessages.vbprojAssemblyReference.cache
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers_autonomes\Driver_GoogleMessages\obj\Debug\Driver_Googlemessages.Resources.resources
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers_autonomes\Driver_GoogleMessages\obj\Debug\Driver_GoogleMessages.vbproj.GenerateResource.cache

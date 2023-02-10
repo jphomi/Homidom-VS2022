@@ -1,0 +1,8 @@
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\RELEASE\Drivers\Driver_Foobar.dll
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\RELEASE\Drivers\Driver_Foobar.pdb
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\RELEASE\Drivers\Driver_Foobar.xml
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Foobar\obj\Release\Driver_Foobar.Resources.resources
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Foobar\obj\Release\Driver_Foobar.vbproj.GenerateResource.cache
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Foobar\obj\Release\Driver_Foobar.dll
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Foobar\obj\Release\Driver_Foobar.xml
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Foobar\obj\Release\Driver_Foobar.pdb

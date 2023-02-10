@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6BB2F741-F077-4D87-90C5-619AF11786FF}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WpfApplication1</RootNamespace>
+    <AssemblyName>HoMIAdmiN</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>HoMIAdmiN\icone.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>..\DEBUG\</OutputPath>
+    <DocumentationFile>HoMIAdmiN.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>..\RELEASE\</OutputPath>
+    <DocumentationFile>HoMIAdmiN.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HoMIDom, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\HoMIDoM\HoMIDom.dll</HintPath>
+    </Reference>
+    <Reference Include="HoMIOAuth2">
+      <HintPath>..\..\RELEASE\HoMIOAuth2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Client">
+      <HintPath>..\..\RELEASE\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RELEASE\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.82.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RELEASE\System.Data.SQLite.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit">
+      <HintPath>..\..\RELEASE\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Class.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\Condition\uCondition.xaml.vb">
+      <DependentUpon>uCondition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uHelp.xaml.vb">
+      <DependentUpon>uHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\ImageButton.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\Timeline\uAction.xaml.vb">
+      <DependentUpon>uAction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\Timeline\WAction.xaml.vb">
+      <DependentUpon>WAction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uButtonTelecommande.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uCtrlImgMnu.xaml.vb">
+      <DependentUpon>uCtrlImgMnu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uDevice.xaml.vb">
+      <DependentUpon>uDevice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uHisto.xaml.vb">
+      <DependentUpon>uHisto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uItemDevice.xaml.vb">
+      <DependentUpon>uItemDevice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uMacro.xaml.vb">
+      <DependentUpon>uMacro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uModuleSimple.xaml.vb">
+      <DependentUpon>uModuleSimple.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uNewDevice.xaml.vb">
+      <DependentUpon>uNewDevice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uScenario.xaml.vb">
+      <DependentUpon>uScenario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uSelectExp.xaml.vb">
+      <DependentUpon>uSelectExp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uTriggerDevice.xaml.vb">
+      <DependentUpon>uTriggerDevice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uTriggerTimer.xaml.vb">
+      <DependentUpon>uTriggerTimer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uVariables.xaml.vb">
+      <DependentUpon>uVariables.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uZone.xaml.vb">
+      <DependentUpon>uZone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\WParam.xaml.vb">
+      <DependentUpon>WParam.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\WTelecommande.xaml.vb">
+      <DependentUpon>WTelecommande.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Fonctions.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\ManagerDevices.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\ManagerDrivers.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\ManagerSequences.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\ManagerZones.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\PushNotification.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Splash.xaml.vb">
+      <DependentUpon>Splash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uReleve.xaml.vb">
+      <DependentUpon>uReleve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uMainMenu.xaml.vb">
+      <DependentUpon>uMainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uSelectElmt.xaml.vb">
+      <DependentUpon>uSelectElmt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uElement.xaml.vb">
+      <DependentUpon>uElement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Variables.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\WindowImg.xaml.vb">
+      <DependentUpon>WindowImg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\WindowLogin.xaml.vb">
+      <DependentUpon>WindowLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\WTelecommandeNew.xaml.vb">
+      <DependentUpon>WTelecommandeNew.xaml</DependentUpon>
+    </Compile>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\Condition\uCondition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\Timeline\uAction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\Timeline\WAction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uCtrlImgMnu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uDevice.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uHisto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uItemDevice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uMacro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uModuleSimple.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uNewDevice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uScenario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uSelectExp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uTriggerDevice.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uTriggerTimer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uDriver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uConfigServer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uTestDevice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uReleve.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uMainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uSelectElmt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uElement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uVariables.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\uZone.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\WParam.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Control\WTelecommande.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Ressources\StringResource.fr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Window1.xaml.vb">
+      <DependentUpon>Window1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\Splash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\WindowImg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\WindowLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="..\HoMIAdmiN\HoMIAdmiN\WTelecommandeNew.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Newtonsoft" />
+    <Import Include="Newtonsoft.Json" />
+    <Import Include="Newtonsoft.Json.Converters" />
+    <Import Include="Newtonsoft.Json.Linq" />
+    <Import Include="Newtonsoft.Json.Schema" />
+    <Import Include="Newtonsoft.Json.Serialization" />
+    <Import Include="System.Data.Sql" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Data.SqlTypes" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\ClServer.vb" />
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uUser.xaml.vb">
+      <DependentUpon>uUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uDriver.xaml.vb">
+      <DependentUpon>uDriver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uConfigServer.xaml.vb">
+      <DependentUpon>uConfigServer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uLog.xaml.vb">
+      <DependentUpon>uLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\Control\uTestDevice.xaml.vb">
+      <DependentUpon>uTestDevice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="..\HoMIAdmiN\HoMIAdmiN\My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="..\HoMIAdmiN\HoMIAdmiN\My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="..\HoMIAdmiN\HoMIAdmiN\ClassDiagram1.cd" />
+    <None Include="..\HoMIAdmiN\HoMIAdmiN\My Project\app.manifest" />
+    <None Include="..\HoMIAdmiN\HoMIAdmiN\My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="..\HoMIAdmiN\HoMIAdmiN\My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\icone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Configurer_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Courbe_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Help_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Macro_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Quitter_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Trigger_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Trigger_clock_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Trigger_device_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\User_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Fond_1024_768.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Defaut_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Lune_130.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Soleil_130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Home_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Homidom_logo_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Logs_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Homidom_banniere_817_203.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Fleche_haut_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Horloge_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Composant_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\multimedia_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Module_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Modifier_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Configurer_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Logs_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Supprimer_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\ajouter_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\save_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Export_32.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Import_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Releve_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Composant_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\email_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\workflow_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\script_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\script_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\workflow_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\zoom_arriere_32.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\zoom_avant_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Stop_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Driver_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\tpbtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Speech_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Cmd_Http_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\command_prompt_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Log_Homidom.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Log_Windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\VBS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Fleche_bas_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\bullet-fleche-vers-le-bas-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Log_128.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Log_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\bar_chart.png" />
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Line20Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\pie_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\line_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Device_MaJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Zone_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\stepline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Refresh_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\lecture-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\NouveauComposant_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\NouveauComposant_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Signal_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Driver_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\clear-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\HoMIAdmiN\HoMIAdmiN\Resources\WeatherCityID_FR.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\telecommande-defaut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\HoMIAdmiN\HoMIAdmiN\Resources\WeatherCityID_BE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Debug-Variable-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\ZoneNo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="..\HoMIAdmiN\HoMIAdmiN\images\Loupe.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_IncrementBeforeBuild="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_BuildVersioningStyle="None.None.Increment.None" BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

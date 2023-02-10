@@ -1,0 +1,9 @@
+C:\Users\JP\Documents\GitHub\JP-Homidom\Drivers\Driver_Freebox\obj\Debug\Driver_Freebox.vbprojResolveAssemblyReference.cache
+C:\Users\JP\Documents\GitHub\JP-Homidom\Drivers\Driver_Freebox\obj\Debug\Driver_FREEBOX.Resources.resources
+C:\Users\JP\Documents\GitHub\JP-Homidom\Drivers\Driver_Freebox\obj\Debug\Driver_Freebox.vbproj.GenerateResource.Cache
+C:\Users\JP\Documents\GitHub\JP-Homidom\DEBUG\Drivers\Driver_FREEBOX.dll
+C:\Users\JP\Documents\GitHub\JP-Homidom\DEBUG\Drivers\Driver_FREEBOX.pdb
+C:\Users\JP\Documents\GitHub\JP-Homidom\DEBUG\Drivers\Driver_FREEBOX.xml
+C:\Users\JP\Documents\GitHub\JP-Homidom\Drivers\Driver_Freebox\obj\Debug\Driver_FREEBOX.dll
+C:\Users\JP\Documents\GitHub\JP-Homidom\Drivers\Driver_Freebox\obj\Debug\Driver_FREEBOX.xml
+C:\Users\JP\Documents\GitHub\JP-Homidom\Drivers\Driver_Freebox\obj\Debug\Driver_FREEBOX.pdb

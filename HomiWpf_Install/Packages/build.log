@@ -1,0 +1,1737 @@
+MakeNSIS v2.46 - Copyright 1995-2009 Contributors
+See the file COPYING for license details.
+Credits can be found in the Users Manual.
+
+Processing config: 
+Processing plugin dlls: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Plugins\*.dll"
+ - AdvSplash::show
+ - Banner::destroy
+ - Banner::getWindow
+ - Banner::show
+ - BgImage::AddImage
+ - BgImage::AddText
+ - BgImage::Clear
+ - BgImage::Destroy
+ - BgImage::Redraw
+ - BgImage::SetBg
+ - BgImage::SetReturn
+ - BgImage::Sound
+ - Dialer::AttemptConnect
+ - Dialer::AutodialHangup
+ - Dialer::AutodialOnline
+ - Dialer::AutodialUnattended
+ - Dialer::GetConnectedState
+ - DotNetChecker::GetDotNet10ServicePack
+ - DotNetChecker::GetDotNet11ServicePack
+ - DotNetChecker::GetDotNet20ServicePack
+ - DotNetChecker::GetDotNet30ServicePack
+ - DotNetChecker::GetDotNet35ServicePack
+ - DotNetChecker::GetDotNet40ClientServicePack
+ - DotNetChecker::GetDotNet40FullServicePack
+ - DotNetChecker::GetDotNet451ServicePack
+ - DotNetChecker::GetDotNet452ServicePack
+ - DotNetChecker::GetDotNet45ServicePack
+ - DotNetChecker::GetDotNet46ServicePack
+ - DotNetChecker::IsDotNet10Installed
+ - DotNetChecker::IsDotNet11Installed
+ - DotNetChecker::IsDotNet20Installed
+ - DotNetChecker::IsDotNet30Installed
+ - DotNetChecker::IsDotNet35Installed
+ - DotNetChecker::IsDotNet40ClientInstalled
+ - DotNetChecker::IsDotNet40FullInstalled
+ - DotNetChecker::IsDotNet451Installed
+ - DotNetChecker::IsDotNet452Installed
+ - DotNetChecker::IsDotNet45Installed
+ - DotNetChecker::IsDotNet46Installed
+ - ExecCmd::exec
+ - ExecCmd::wait
+ - ExecDos::exec
+ - ExecDos::isdone
+ - ExecDos::wait
+ - FindProcDLL::FindProc
+ - InstallOptions::dialog
+ - InstallOptions::initDialog
+ - InstallOptions::show
+ - KillProcDLL::KillProc
+ - LangDLL::LangDialog
+ - Math::Script
+ - NSISdl::download
+ - NSISdl::download_quiet
+ - SimpleFC::AddApplication
+ - SimpleFC::AddPort
+ - SimpleFC::AdvAddRule
+ - SimpleFC::AdvExistsRule
+ - SimpleFC::AdvRemoveRule
+ - SimpleFC::AllowDisallowExceptionsNotAllowed
+ - SimpleFC::AllowDisallowIcmpInboundEchoRequest
+ - SimpleFC::AllowDisallowIcmpInboundMaskRequest
+ - SimpleFC::AllowDisallowIcmpInboundRouterRequest
+ - SimpleFC::AllowDisallowIcmpInboundTimestampRequest
+ - SimpleFC::AllowDisallowIcmpOutboundDestinationUnreachable
+ - SimpleFC::AllowDisallowIcmpOutboundPacketTooBig
+ - SimpleFC::AllowDisallowIcmpOutboundParameterProblem
+ - SimpleFC::AllowDisallowIcmpOutboundSourceQuench
+ - SimpleFC::AllowDisallowIcmpOutboundTimeExceeded
+ - SimpleFC::AllowDisallowIcmpRedirect
+ - SimpleFC::AreExceptionsNotAllowed
+ - SimpleFC::AreNotificationsEnabled
+ - SimpleFC::EnableDisableApplication
+ - SimpleFC::EnableDisableFirewall
+ - SimpleFC::EnableDisableNotifications
+ - SimpleFC::EnableDisablePort
+ - SimpleFC::IsApplicationAdded
+ - SimpleFC::IsApplicationEnabled
+ - SimpleFC::IsFirewallEnabled
+ - SimpleFC::IsFirewallServiceRunning
+ - SimpleFC::IsIcmpTypeAllowed
+ - SimpleFC::IsPortAdded
+ - SimpleFC::IsPortEnabled
+ - SimpleFC::RemoveApplication
+ - SimpleFC::RemovePort
+ - SimpleFC::RestoreDefaults
+ - SimpleFC::StartStopFirewallService
+ - SimpleSC::ContinueService
+ - SimpleSC::ExistsService
+ - SimpleSC::GetErrorMessage
+ - SimpleSC::GetServiceBinaryPath
+ - SimpleSC::GetServiceDelayedAutoStartInfo
+ - SimpleSC::GetServiceDescription
+ - SimpleSC::GetServiceDisplayName
+ - SimpleSC::GetServiceFailure
+ - SimpleSC::GetServiceFailureFlag
+ - SimpleSC::GetServiceLogon
+ - SimpleSC::GetServiceName
+ - SimpleSC::GetServiceStartType
+ - SimpleSC::GetServiceStatus
+ - SimpleSC::GrantServiceLogonPrivilege
+ - SimpleSC::InstallService
+ - SimpleSC::PauseService
+ - SimpleSC::RemoveService
+ - SimpleSC::RemoveServiceLogonPrivilege
+ - SimpleSC::RestartService
+ - SimpleSC::ServiceIsPaused
+ - SimpleSC::ServiceIsRunning
+ - SimpleSC::ServiceIsStopped
+ - SimpleSC::SetServiceBinaryPath
+ - SimpleSC::SetServiceDelayedAutoStartInfo
+ - SimpleSC::SetServiceDescription
+ - SimpleSC::SetServiceFailure
+ - SimpleSC::SetServiceFailureFlag
+ - SimpleSC::SetServiceLogon
+ - SimpleSC::SetServiceStartType
+ - SimpleSC::StartService
+ - SimpleSC::StopService
+ - Splash::show
+ - StartMenu::Init
+ - StartMenu::Select
+ - StartMenu::Show
+ - System::Alloc
+ - System::Call
+ - System::Copy
+ - System::Free
+ - System::Get
+ - System::Int64Op
+ - System::Store
+ - TypeLib::GetLibVersion
+ - TypeLib::Register
+ - TypeLib::UnRegister
+ - UserInfo::GetAccountType
+ - UserInfo::GetName
+ - UserInfo::GetOriginalAccountType
+ - VPatch::GetFileCRC32
+ - VPatch::GetFileMD5
+ - VPatch::vpatchfile
+ - nsDialogs::Create
+ - nsDialogs::CreateControl
+ - nsDialogs::CreateItem
+ - nsDialogs::CreateTimer
+ - nsDialogs::GetUserData
+ - nsDialogs::KillTimer
+ - nsDialogs::OnBack
+ - nsDialogs::OnChange
+ - nsDialogs::OnClick
+ - nsDialogs::OnNotify
+ - nsDialogs::SelectFileDialog
+ - nsDialogs::SelectFolderDialog
+ - nsDialogs::SetRTL
+ - nsDialogs::SetUserData
+ - nsDialogs::Show
+ - nsExec::Exec
+ - nsExec::ExecToLog
+ - nsExec::ExecToStack
+ - nsisXML::appendChild
+ - nsisXML::create
+ - nsisXML::createElement
+ - nsisXML::createProcessingInstruction
+ - nsisXML::getAttribute
+ - nsisXML::getText
+ - nsisXML::insertBefore
+ - nsisXML::load
+ - nsisXML::loadAndValidate
+ - nsisXML::parentNode
+ - nsisXML::release
+ - nsisXML::removeChild
+ - nsisXML::save
+ - nsisXML::select
+ - nsisXML::setAttribute
+ - nsisXML::setDocumentElement
+ - nsisXML::setText
+
+!define: "MUI_INSERT_NSISCONF"=""
+
+Changing directory to: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install"
+
+Processing script file: "Homiwpf.Setup_Full_x86_x64.0.nsi"
+!define: "PRODUCT_NAME"="HoMIWpf"
+!define: "PRODUCT_VERSION"="1.3"
+!define: "PRODUCT_BUILD"="0"
+!define: "PRODUCT_REVISION"="0"
+!define: "PRODUCT_RELEASE"="RELEASE"
+!define: "PRODUCT_PUBLISHER"="HoMIWpf"
+!define: "PRODUCT_WEB_SITE"="http://www.homidom.com"
+!define: "PRODUCT_DIR_REGKEY"="Software\HoMIWpf"
+!define: "PRODUCT_UNINSTALL_REGKEY"="Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf"
+!define: "DEFAULT_CFG_IPSOAP"="localhost"
+!define: "DEFAULT_CFG_PORTSOAP"="7999"
+!define: "DEFAULT_CFG_IDSRV"="123456789"
+!define: "CSIDL_COMMONAPPDATA"="0x23"
+Var: "SF_COMMONAPPDATA"
+!define: "ROOT_DIR"=".."
+!define: "PUBLISH_DIR"="..\\RELEASE\"
+!define: "PACKAGES_DIR"="Packages"
+VIAddVersionKey: "ProductName" "HoMIWpf"
+VIAddVersionKey: "Comments" "http://www.homidom.com"
+VIAddVersionKey: "CompanyName" "HoMIWpf"
+VIAddVersionKey: "LegalCopyright" "Copyright HoMIWpf"
+VIAddVersionKey: "FileDescription" "HoMIWpf"
+VIAddVersionKey: "FileVersion" "1.3.0.0"
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\MUI2.nsh"
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Contrib\Modern UI 2\MUI2.nsh"
+NSIS Modern User Interface version 2.0 - Copyright 2002-2009 Joost Verburg (C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Contrib\Modern UI 2\MUI2.nsh:8)
+!define: "MUI_INCLUDED"=""
+!define: "MUI_SYSVERSION"="2.0"
+!define: "MUI_VERBOSE"="3"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Contrib\Modern UI 2\MUI2.nsh"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\MUI2.nsh"
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\Sections.nsh"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\Sections.nsh"
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\TextFunc.nsh"
+!define: "TEXTFUNC_INCLUDED"=""
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\FileFunc.nsh"
+!define: "FILEFUNC_INCLUDED"=""
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\Util.nsh"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\Util.nsh"
+!define: "Locate"="!insertmacro LocateCall"
+!define: "un.Locate"="!insertmacro LocateCall"
+!define: "GetSize"="!insertmacro GetSizeCall"
+!define: "un.GetSize"="!insertmacro GetSizeCall"
+!define: "DriveSpace"="!insertmacro DriveSpaceCall"
+!define: "un.DriveSpace"="!insertmacro DriveSpaceCall"
+!define: "GetDrives"="!insertmacro GetDrivesCall"
+!define: "un.GetDrives"="!insertmacro GetDrivesCall"
+!define: "GetTime"="!insertmacro GetTimeCall"
+!define: "un.GetTime"="!insertmacro GetTimeCall"
+!define: "GetFileAttributes"="!insertmacro GetFileAttributesCall"
+!define: "un.GetFileAttributes"="!insertmacro GetFileAttributesCall"
+!define: "GetFileVersion"="!insertmacro GetFileVersionCall"
+!define: "un.GetFileVersion"="!insertmacro GetFileVersionCall"
+!define: "GetExeName"="!insertmacro GetExeNameCall"
+!define: "un.GetExeName"="!insertmacro GetExeNameCall"
+!define: "GetExePath"="!insertmacro GetExePathCall"
+!define: "un.GetExePath"="!insertmacro GetExePathCall"
+!define: "GetParameters"="!insertmacro GetParametersCall"
+!define: "un.GetParameters"="!insertmacro GetParametersCall"
+!define: "GetOptions"="!insertmacro GetOptionsCall"
+!define: "un.GetOptions"="!insertmacro GetOptionsCall"
+!define: "GetOptionsS"="!insertmacro GetOptionsSCall"
+!define: "un.GetOptionsS"="!insertmacro GetOptionsSCall"
+!define: "GetRoot"="!insertmacro GetRootCall"
+!define: "un.GetRoot"="!insertmacro GetRootCall"
+!define: "GetParent"="!insertmacro GetParentCall"
+!define: "un.GetParent"="!insertmacro GetParentCall"
+!define: "GetFileName"="!insertmacro GetFileNameCall"
+!define: "un.GetFileName"="!insertmacro GetFileNameCall"
+!define: "GetBaseName"="!insertmacro GetBaseNameCall"
+!define: "un.GetBaseName"="!insertmacro GetBaseNameCall"
+!define: "GetFileExt"="!insertmacro GetFileExtCall"
+!define: "un.GetFileExt"="!insertmacro GetFileExtCall"
+!define: "BannerTrimPath"="!insertmacro BannerTrimPathCall"
+!define: "un.BannerTrimPath"="!insertmacro BannerTrimPathCall"
+!define: "DirState"="!insertmacro DirStateCall"
+!define: "un.DirState"="!insertmacro DirStateCall"
+!define: "RefreshShellIcons"="!insertmacro RefreshShellIconsCall"
+!define: "un.RefreshShellIcons"="!insertmacro RefreshShellIconsCall"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\FileFunc.nsh"
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\Util.nsh"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\Util.nsh"
+!define: "LineFind"="!insertmacro LineFindCall"
+!define: "un.LineFind"="!insertmacro LineFindCall"
+!define: "LineRead"="!insertmacro LineReadCall"
+!define: "un.LineRead"="!insertmacro LineReadCall"
+!define: "FileReadFromEnd"="!insertmacro FileReadFromEndCall"
+!define: "un.FileReadFromEnd"="!insertmacro FileReadFromEndCall"
+!define: "LineSum"="!insertmacro LineSumCall"
+!define: "un.LineSum"="!insertmacro LineSumCall"
+!define: "FileJoin"="!insertmacro FileJoinCall"
+!define: "un.FileJoin"="!insertmacro FileJoinCall"
+!define: "TextCompare"="!insertmacro TextCompareCall"
+!define: "un.TextCompare"="!insertmacro TextCompareCall"
+!define: "TextCompareS"="!insertmacro TextCompareSCall"
+!define: "un.TextCompareS"="!insertmacro TextCompareSCall"
+!define: "ConfigRead"="!insertmacro ConfigReadCall"
+!define: "un.ConfigRead"="!insertmacro ConfigReadCall"
+!define: "ConfigReadS"="!insertmacro ConfigReadSCall"
+!define: "un.ConfigReadS"="!insertmacro ConfigReadSCall"
+!define: "ConfigWrite"="!insertmacro ConfigWriteCall"
+!define: "un.ConfigWrite"="!insertmacro ConfigWriteCall"
+!define: "ConfigWriteS"="!insertmacro ConfigWriteSCall"
+!define: "un.ConfigWriteS"="!insertmacro ConfigWriteSCall"
+!define: "FileRecode"="!insertmacro FileRecodeCall"
+!define: "un.FileRecode"="!insertmacro FileRecodeCall"
+!define: "TrimNewLines"="!insertmacro TrimNewLinesCall"
+!define: "un.TrimNewLines"="!insertmacro TrimNewLinesCall"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\TextFunc.nsh"
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\LogicLib.nsh"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\LogicLib.nsh"
+!include: "includes\x64.nsh"
+!define: "___X64__NSH___"=""
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\LogicLib.nsh"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\LogicLib.nsh"
+!define: "RunningX64"=""" RunningX64 """
+!define: "DisableX64FSRedirection"="!insertmacro DisableX64FSRedirection"
+!define: "EnableX64FSRedirection"="!insertmacro EnableX64FSRedirection"
+!include: closed: "includes\x64.nsh"
+!include: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\nsDialogs.nsh"
+!include: closed: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\tools\nsis-2.46\Include\nsDialogs.nsh"
+!include: "includes\CustomLog.nsh"
+Var: "hFileLog"
+!include: closed: "includes\CustomLog.nsh"
+!include: "includes\DotNetChecker.nsh"
+!include: closed: "includes\DotNetChecker.nsh"
+!include: "includes\Redist.VC10.nsh"
+!define: "URL_VC10_X64"="http://download.microsoft.com/download/3/2/2/3224B87F-CFA0-4E70-BDA3-3DE650EFEBA5/vcredist_x64.exe"
+!define: "URL_VC10_X86"="http://download.microsoft.com/download/5/B/C/5BC5DBB3-652D-4DCE-B14A-475AB85EEF6E/vcredist_x86.exe"
+Var: "URL_VC10"
+Var: "VC10_Package"
+Var: "VC10_RegKey"
+Var: "VC10RedistRegKeyValue"
+Var: "IsVC10RedistInstalled"
+Function: "DownloadVC10Redist"
+Goto: lbl_DownloadRequired
+DetailPrint: "$(DESC_DOWNLOADING1) $(DESC_VC10_LABEL)..."
+MessageBox: 308: "$(DESC_VC10_DECISION)" (on IDYES goto lbl_Download)
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC12_LABEL) Redistributable : Installation réfusée."
+FileWrite: $(DESC_VC12_LABEL) Redistributable : Installation réfusée.
+->$hFileLog
+!insertmacro: end of Log_String
+Goto: lbl_NoDownloadRequired
+File: "NSISdl.dll"->"$PLUGINSDIR\NSISdl.dll" [compress] 8517/14848 bytes
+Plugin Command: download /TRANSLATE $(DESC_DOWNLOADING) $(DESC_CONNECTING) $(DESC_SECOND) $(DESC_MINUTE) $(DESC_HOUR) $(DESC_PLURAL) $(DESC_PROGRESS) $(DESC_REMAINING) /TIMEOUT=30000 $URL_VC10 $PLUGINSDIR\$VC10_Package
+Pop: $0
+StrCmp "$0" "success" equal=lbl_continue, nonequal=
+DetailPrint: "$(DESC_DOWNLOADFAILED) $0"
+Goto: lbl_NoDownloadRequired
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC12_LABEL) Redistributable : Téléchargement OK."
+FileWrite: $(DESC_VC12_LABEL) Redistributable : Téléchargement OK.
+->$hFileLog
+!insertmacro: end of Log_String
+DetailPrint: "$(DESC_INSTALLING) $(DESC_VC10_LABEL)..."
+File: "Banner.dll"->"$PLUGINSDIR\Banner.dll" [compress] 1473/4096 bytes
+Plugin Command: show /set 76 Installation d'HoMIDoM : $(DESC_INSTALLING) $(DESC_VC10_LABEL)...
+File: "nsExec.dll"->"$PLUGINSDIR\nsExec.dll" [compress] 3142/6656 bytes
+Plugin Command: ExecToStack "$PLUGINSDIR\$VC10_Package" /q :a
+File: "Banner.dll"->"$PLUGINSDIR\Banner.dll" [compress] 0/4096 bytes
+Plugin Command: destroy
+Goto: lbl_NoDownloadRequired
+FunctionEnd
+Function: "CheckVC10Redist"
+StrCpy $IsVC10RedistInstalled "0" () ()
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $URL_VC10 "http://download.microsoft.com/download/3/2/2/3224B87F-CFA0-4E70-BDA3-3DE650EFEBA5/vcredist_x64.exe" () ()
+StrCpy $VC10_Package "vcredist_x64.exe" () ()
+!insertmacro: _Else
+!insertmacro: end of _Else
+StrCpy $URL_VC10 "http://download.microsoft.com/download/5/B/C/5BC5DBB3-652D-4DCE-B14A-475AB85EEF6E/vcredist_x86.exe" () ()
+StrCpy $VC10_Package "vcredist_x86.exe" () ()
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Wow6432Node\Microsoft\DevDiv\vc\Servicing\10.0\RuntimeMinimum" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Install
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Microsoft\DevDiv\vc\Servicing\10.0\RuntimeMinimum" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Install
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Wow6432Node\Microsoft\DevDiv\vc\Servicing\10.0\red" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Install
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\10.0\VC\Runtimes\x64" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Installed
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\10.0\VC\VCRedist\x64" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Installed
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Microsoft\VisualStudio\10.0\VC\Runtimes\x64" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Installed
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Microsoft\VisualStudio\10.0\VC\VCRedist\x64" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Installed
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\10.0\VC\Runtimes\x86" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Installed
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\10.0\VC\VCRedist\x86" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Installed
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Microsoft\VisualStudio\10.0\VC\Runtimes\x86" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Installed
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC10_RegKey "SOFTWARE\Microsoft\VisualStudio\10.0\VC\VCRedist\x86" () ()
+ReadRegDWORD $VC10RedistRegKeyValue HKLM\$VC10_RegKey\Installed
+IntCmp $VC10RedistRegKeyValue:1 equal=VC10RegKeyFound, < , > 
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC10_LABEL) Redistributable KO :  Pas de clé de registre valide trouvé !"
+FileWrite: $(DESC_VC10_LABEL) Redistributable KO :  Pas de clé de registre valide trouvé !
+->$hFileLog
+!insertmacro: end of Log_String
+Goto: exitVC10RedistCheck
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC10_LABEL) Redistributable OK : $VC10_RegKey => $VC10RedistRegKeyValue"
+FileWrite: $(DESC_VC10_LABEL) Redistributable OK : $VC10_RegKey => $VC10RedistRegKeyValue
+->$hFileLog
+!insertmacro: end of Log_String
+StrCpy $IsVC10RedistInstalled "1" () ()
+FunctionEnd
+Section: "" ->(PREREQ_VC10)
+SectionIn: [RO] 
+!insertmacro: _If
+!insertmacro: end of _If
+Call "DownloadVC10Redist"
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+SectionEnd
+!include: closed: "includes\Redist.VC10.nsh"
+!include: "includes\Redist.VC11.nsh"
+!define: "URL_VC11_X64"="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU3/vcredist_x64.exe"
+!define: "URL_VC11_X86"="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU3/vcredist_x86.exe"
+Var: "URL_VC11"
+Var: "VC11_Package"
+Var: "VC11_RegKey"
+Var: "VC11RedistRegKeyValue"
+Var: "IsVC11RedistInstalled"
+Function: "DownloadVC11Redist"
+Goto: lbl_DownloadRequired
+DetailPrint: "$(DESC_DOWNLOADING1) $(DESC_VC11_LABEL)..."
+MessageBox: 308: "$(DESC_VC11_DECISION)" (on IDYES goto lbl_Download)
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC12_LABEL) Redistributable : Installation réfusée."
+FileWrite: $(DESC_VC12_LABEL) Redistributable : Installation réfusée.
+->$hFileLog
+!insertmacro: end of Log_String
+Goto: lbl_NoDownloadRequired
+File: "NSISdl.dll"->"$PLUGINSDIR\NSISdl.dll" [compress] 0/14848 bytes
+Plugin Command: download /TRANSLATE $(DESC_DOWNLOADING) $(DESC_CONNECTING) $(DESC_SECOND) $(DESC_MINUTE) $(DESC_HOUR) $(DESC_PLURAL) $(DESC_PROGRESS) $(DESC_REMAINING) /TIMEOUT=30000 $URL_VC11 $PLUGINSDIR\$VC11_Package
+Pop: $0
+StrCmp "$0" "success" equal=lbl_continue, nonequal=
+DetailPrint: "$(DESC_DOWNLOADFAILED) $0"
+Goto: lbl_NoDownloadRequired
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC12_LABEL) Redistributable : Téléchargement OK."
+FileWrite: $(DESC_VC12_LABEL) Redistributable : Téléchargement OK.
+->$hFileLog
+!insertmacro: end of Log_String
+DetailPrint: "$(DESC_INSTALLING) $(DESC_VC11_LABEL)..."
+Plugin Command: show /set 76 Installation d'HoMIDoM : $(DESC_INSTALLING) $(DESC_VC11_LABEL)...
+Plugin Command: ExecToStack "$PLUGINSDIR\$VC11_Package" /q :a
+Plugin Command: destroy
+Goto: lbl_NoDownloadRequired
+FunctionEnd
+Function: "CheckVC11Redist"
+StrCpy $IsVC11RedistInstalled "0" () ()
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $URL_VC11 "http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU3/vcredist_x64.exe" () ()
+StrCpy $VC11_Package "vcredist_x64.exe" () ()
+!insertmacro: _Else
+!insertmacro: end of _Else
+StrCpy $URL_VC11 "http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU3/vcredist_x86.exe" () ()
+StrCpy $VC11_Package "vcredist_x86.exe" () ()
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+ClearErrors
+StrCpy $VC11_RegKey "SOFTWARE\Wow6432Node\Microsoft\DevDiv\vc\Servicing\11.0\RuntimeMinimum" () ()
+ReadRegDWORD $VC11RedistRegKeyValue HKLM\$VC11_RegKey\Install
+IntCmp $VC11RedistRegKeyValue:1 equal=VC11RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC11_RegKey "SOFTWARE\Microsoft\DevDiv\vc\Servicing\11.0\RuntimeMinimum" () ()
+ReadRegDWORD $VC11RedistRegKeyValue HKLM\$VC11_RegKey\Install
+IntCmp $VC11RedistRegKeyValue:1 equal=VC11RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC11_RegKey "SOFTWARE\Wow6432Node\Microsoft\DevDiv\vc\Servicing\11.0\red" () ()
+ReadRegDWORD $VC11RedistRegKeyValue HKLM\$VC11_RegKey\Install
+IntCmp $VC11RedistRegKeyValue:1 equal=VC11RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC11_RegKey "SOFTWARE\Microsoft\DevDiv\vc\Servicing\11.0\red" () ()
+ReadRegDWORD $VC11RedistRegKeyValue HKLM\$VC11_RegKey\Install
+IntCmp $VC11RedistRegKeyValue:1 equal=VC11RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC11_RegKey "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\11.0\VC\Runtimes\x64" () ()
+ReadRegDWORD $VC11RedistRegKeyValue HKLM\$VC11_RegKey\Installed
+IntCmp $VC11RedistRegKeyValue:1 equal=VC11RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC11_RegKey "SOFTWARE\Microsoft\VisualStudio\11.0\VC\Runtimes\x64" () ()
+ReadRegDWORD $VC11RedistRegKeyValue HKLM\$VC11_RegKey\Installed
+IntCmp $VC11RedistRegKeyValue:1 equal=VC11RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC11_RegKey "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\11.0\VC\Runtimes\x86" () ()
+ReadRegDWORD $VC11RedistRegKeyValue HKLM\$VC11_RegKey\Installed
+IntCmp $VC11RedistRegKeyValue:1 equal=VC11RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC11_RegKey "SOFTWARE\Microsoft\VisualStudio\11.0\VC\Runtimes\x86" () ()
+ReadRegDWORD $VC11RedistRegKeyValue HKLM\$VC11_RegKey\Installed
+IntCmp $VC11RedistRegKeyValue:1 equal=VC11RegKeyFound, < , > 
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC11_LABEL) Redistributable KO :  Pas de clé de registre valide trouvé !"
+FileWrite: $(DESC_VC11_LABEL) Redistributable KO :  Pas de clé de registre valide trouvé !
+->$hFileLog
+!insertmacro: end of Log_String
+Goto: exitVC11RedistCheck
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC11_LABEL) Redistributable OK : $VC11_RegKey => $VC11RedistRegKeyValue"
+FileWrite: $(DESC_VC11_LABEL) Redistributable OK : $VC11_RegKey => $VC11RedistRegKeyValue
+->$hFileLog
+!insertmacro: end of Log_String
+StrCpy $IsVC11RedistInstalled "1" () ()
+FunctionEnd
+Section: "" ->(PREREQ_VC11)
+SectionIn: [RO] 
+!insertmacro: _If
+!insertmacro: end of _If
+Call "DownloadVC11Redist"
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+SectionEnd
+!include: closed: "includes\Redist.VC11.nsh"
+!include: "includes\Redist.VC12.nsh"
+!define: "URL_VC12_X64"="https://download.microsoft.com/download/A/4/D/A4D9F1D3-6449-49EB-9A6E-902F61D8D14B/vcredist_x64.exe"
+!define: "URL_VC12_X86"="https://download.microsoft.com/download/A/4/D/A4D9F1D3-6449-49EB-9A6E-902F61D8D14B/vcredist_x86.exe"
+Var: "URL_VC12"
+Var: "VC12_Package"
+Var: "VC12_RegKey"
+Var: "VC12RedistRegKeyValue"
+Var: "IsVC12RedistInstalled"
+Function: "DownloadVC12Redist"
+Goto: lbl_DownloadRequired
+DetailPrint: "$(DESC_DOWNLOADING1) $(DESC_VC12_LABEL)..."
+MessageBox: 308: "$(DESC_VC12_DECISION)" (on IDYES goto lbl_Download)
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC12_LABEL) Redistributable : Installation réfusée."
+FileWrite: $(DESC_VC12_LABEL) Redistributable : Installation réfusée.
+->$hFileLog
+!insertmacro: end of Log_String
+Goto: lbl_NoDownloadRequired
+File: "NSISdl.dll"->"$PLUGINSDIR\NSISdl.dll" [compress] 0/14848 bytes
+Plugin Command: download /TRANSLATE $(DESC_DOWNLOADING) $(DESC_CONNECTING) $(DESC_SECOND) $(DESC_MINUTE) $(DESC_HOUR) $(DESC_PLURAL) $(DESC_PROGRESS) $(DESC_REMAINING) /TIMEOUT=30000 $URL_VC12 $PLUGINSDIR\$VC12_Package
+Pop: $0
+StrCmp "$0" "success" equal=lbl_continue, nonequal=
+DetailPrint: "$(DESC_DOWNLOADFAILED) $0"
+Goto: lbl_NoDownloadRequired
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC12_LABEL) Redistributable : Téléchargement OK."
+FileWrite: $(DESC_VC12_LABEL) Redistributable : Téléchargement OK.
+->$hFileLog
+!insertmacro: end of Log_String
+DetailPrint: "$(DESC_INSTALLING) $(DESC_VC12_LABEL)..."
+Plugin Command: show /set 76 Installation d'HoMIDoM : $(DESC_INSTALLING) $(DESC_VC12_LABEL)...
+Plugin Command: ExecToStack "$PLUGINSDIR\$VC12_Package" /q :a
+Plugin Command: destroy
+Goto: lbl_NoDownloadRequired
+FunctionEnd
+Function: "CheckVC12Redist"
+StrCpy $IsVC12RedistInstalled "0" () ()
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $URL_VC12 "https://download.microsoft.com/download/A/4/D/A4D9F1D3-6449-49EB-9A6E-902F61D8D14B/vcredist_x64.exe" () ()
+StrCpy $VC12_Package "vcredist_x64.exe" () ()
+!insertmacro: _Else
+!insertmacro: end of _Else
+StrCpy $URL_VC12 "https://download.microsoft.com/download/A/4/D/A4D9F1D3-6449-49EB-9A6E-902F61D8D14B/vcredist_x86.exe" () ()
+StrCpy $VC12_Package "vcredist_x86.exe" () ()
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+ClearErrors
+StrCpy $VC12_RegKey "SOFTWARE\Wow6432Node\Microsoft\DevDiv\vc\Servicing\12.0\RuntimeMinimum" () ()
+ReadRegDWORD $VC12RedistRegKeyValue HKLM\$VC12_RegKey\Install
+IntCmp $VC12RedistRegKeyValue:1 equal=VC12RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC12_RegKey "SOFTWARE\Microsoft\DevDiv\vc\Servicing\12.0\RuntimeMinimum" () ()
+ReadRegDWORD $VC12RedistRegKeyValue HKLM\$VC12_RegKey\Install
+IntCmp $VC12RedistRegKeyValue:1 equal=VC12RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC12_RegKey "SOFTWARE\Wow6432Node\Microsoft\DevDiv\vc\Servicing\12.0\red" () ()
+ReadRegDWORD $VC12RedistRegKeyValue HKLM\$VC12_RegKey\Install
+IntCmp $VC12RedistRegKeyValue:1 equal=VC12RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC12_RegKey "SOFTWARE\Microsoft\DevDiv\vc\Servicing\12.0\red" () ()
+ReadRegDWORD $VC12RedistRegKeyValue HKLM\$VC12_RegKey\Install
+IntCmp $VC12RedistRegKeyValue:1 equal=VC12RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC12_RegKey "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\12.0\VC\Runtimes\x64" () ()
+ReadRegDWORD $VC12RedistRegKeyValue HKLM\$VC12_RegKey\Installed
+IntCmp $VC12RedistRegKeyValue:1 equal=VC12RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC12_RegKey "SOFTWARE\Microsoft\VisualStudio\12.0\VC\Runtimes\x64" () ()
+ReadRegDWORD $VC12RedistRegKeyValue HKLM\$VC12_RegKey\Installed
+IntCmp $VC12RedistRegKeyValue:1 equal=VC12RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC12_RegKey "SOFTWARE\Wow6432Node\Microsoft\VisualStudio\12.0\VC\Runtimes\x86" () ()
+ReadRegDWORD $VC12RedistRegKeyValue HKLM\$VC12_RegKey\Installed
+IntCmp $VC12RedistRegKeyValue:1 equal=VC12RegKeyFound, < , > 
+ClearErrors
+StrCpy $VC12_RegKey "SOFTWARE\Microsoft\VisualStudio\12.0\VC\Runtimes\x86" () ()
+ReadRegDWORD $VC12RedistRegKeyValue HKLM\$VC12_RegKey\Installed
+IntCmp $VC12RedistRegKeyValue:1 equal=VC12RegKeyFound, < , > 
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC12_LABEL) Redistributable KO :  Pas de clé de registre valide trouvée !"
+FileWrite: $(DESC_VC12_LABEL) Redistributable KO :  Pas de clé de registre valide trouvée !
+->$hFileLog
+!insertmacro: end of Log_String
+Goto: exitVC12RedistCheck
+!insertmacro: Log_String
+DetailPrint: "$(DESC_VC12_LABEL) Redistributable OK : $VC12_RegKey => $VC12RedistRegKeyValue"
+FileWrite: $(DESC_VC12_LABEL) Redistributable OK : $VC12_RegKey => $VC12RedistRegKeyValue
+->$hFileLog
+!insertmacro: end of Log_String
+StrCpy $IsVC12RedistInstalled "1" () ()
+FunctionEnd
+Section: "" ->(PREREQ_VC12)
+SectionIn: [RO] 
+!insertmacro: _If
+!insertmacro: end of _If
+Call "DownloadVC12Redist"
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+SectionEnd
+!include: closed: "includes\Redist.VC12.nsh"
+!define: "MUI_ABORTWARNING"=""
+!define: "MUI_COMPONENTSPAGE_NODESC"=""
+!define: "MUI_ICON"="..\Images\Logo\icone.ico"
+!define: "MUI_UNICON"="..\Images\Logo\icone.ico"
+!define: "MUI_HEADERIMAGE"=""
+!define: "MUI_HEADERIMAGE_RIGHT"=""
+!define: "MUI_HEADERIMAGE_BITMAP"="bandeau.bmp"
+!define: "MUI_WELCOMEFINISHPAGE_BITMAP"="Setup.bmp"
+!define: "TEMP1"="$R0"
+!insertmacro: MUI_PAGE_WELCOME
+!insertmacro: end of MUI_PAGE_WELCOME
+!define: "MUI_LICENSEPAGE_CHECKBOX"=""
+!insertmacro: MUI_PAGE_LICENSE
+!insertmacro: end of MUI_PAGEDECLARATION_LICENSE
+!insertmacro: end of MUI_PAGE_LICENSE
+!insertmacro: MUI_PAGE_COMPONENTS
+!insertmacro: end of MUI_PAGE_COMPONENTS
+!insertmacro: MUI_PAGE_DIRECTORY
+!insertmacro: end of MUI_PAGE_DIRECTORY
+Page: custom (creator:nsDialogsPage) (leave:nsDialogsPageLeave)
+!insertmacro: MUI_PAGE_INSTFILES
+!insertmacro: end of MUI_PAGE_INSTFILES
+!define: "MUI_PAGE_CUSTOMFUNCTION_SHOW"="un.ModifyUnWelcome"
+!define: "MUI_PAGE_CUSTOMFUNCTION_LEAVE"="un.LeaveUnWelcome"
+!insertmacro: MUI_UNPAGE_WELCOME
+!insertmacro: end of MUI_UNPAGE_WELCOME
+!insertmacro: MUI_UNPAGE_INSTFILES
+!insertmacro: end of MUI_UNPAGE_INSTFILES
+Var: "FullUninstBox"
+Var: "FullUninstBox_State"
+!include: "includes\localization.fr.nsh"
+!insertmacro: MUI_LANGUAGE
+!insertmacro: end of MUI_LANGUAGE
+LangString: "DESC_REMAINING" 1036 " (%d %s%s restant)"
+LangString: "DESC_PROGRESS" 1036 "%dkB (%d%%) of %ukB @ %d.%01dkB/s"
+LangString: "DESC_PLURAL" 1036 "s"
+LangString: "DESC_HOUR" 1036 "heure"
+LangString: "DESC_MINUTE" 1036 "minute"
+LangString: "DESC_SECOND" 1036 "seconde"
+LangString: "DESC_CONNECTING" 1036 "Connexion..."
+LangString: "DESC_DOWNLOADING" 1036 "Téléchargement %s"
+LangString: "DESC_DOWNLOADING1" 1036 "Téléchargement"
+LangString: "DESC_SHORTDOTNET" 1036 "Microsoft .Net Framework 4.0"
+LangString: "DESC_DOTNET_DECISION" 1036 "$(DESC_SHORTDOTNET) est requis mais n'a pas été détecté.
+
+Voulez-vous télécharger et installer $(DESC_SHORTDOTNET) maintenant ?."
+LangString: "SEC_DOTNET" 1036 "$(DESC_SHORTDOTNET) "
+LangString: "DESC_INSTALLING" 1036 "Installation en cours"
+LangString: "DESC_DOWNLOADFAILED" 1036 "Echec du Téléchargement :"
+LangString: "ERROR_DOTNET_DUPLICATE_INSTANCE" 1036 "L'installation de $(DESC_SHORTDOTNET) est déja en cours d'execution."
+LangString: "ERROR_NOT_ADMINISTRATOR" 1036 "Vous ne disposez pas des droits Administrateurs !"
+LangString: "ERROR_INVALID_PLATFORM" 1036 "Système d'exploitation non supporté !"
+LangString: "DESC_DOTNET_TIMEOUT" 1036 "Le temps maximum d'installation pour l'installation de $(DESC_SHORTDOTNET) a été dépassé !"
+LangString: "ERROR_DOTNET_INVALID_PATH" 1036 "Le fichier d'installation de $(DESC_SHORTDOTNET)
+ n'a pas été trouvé à l'emplacement suivant :
+"
+LangString: "ERROR_DOTNET_FATAL" 1036 "Une erreur fatale c'est produite pendant l'installation
+ de $(DESC_SHORTDOTNET)."
+LangString: "FAILED_DOTNET_INSTALL" 1036 "L'installation de HoMIWpf va
+ se poursuivre. Cependant, HoMIDoM ne pourra pas fonctionner correctement
+tant que $(DESC_SHORTDOTNET)
+ ne sera pas installé completement."
+LangString: "DESC_VC10_LABEL" 1036 "Microsoft Visual C++ 2010 (10.0)"
+LangString: "DESC_VC10_DECISION" 1036 "$(DESC_VC10_LABEL) est requis mais n'a pas été détecté.
+
+Voulez-vous télécharger et installer $(DESC_VC10_LABEL) maintenant ?."
+LangString: "DESC_VC11_LABEL" 1036 "Microsoft Visual C++ 2012 (11.0)"
+LangString: "DESC_VC11_DECISION" 1036 "$(DESC_VC11_LABEL) est requis mais n'a pas été détecté.
+
+Voulez-vous télécharger et installer $(DESC_VC11_LABEL) maintenant ?."
+LangString: "DESC_VC12_LABEL" 1036 "Microsoft Visual C++ 2013 (12.0)"
+LangString: "DESC_VC12_DECISION" 1036 "$(DESC_VC11_LABEL) est requis mais n'a pas été détecté.
+
+Voulez-vous télécharger et installer $(DESC_VC11_LABEL) maintenant ?."
+!include: closed: "includes\localization.fr.nsh"
+Name: "HoMIWpf 1.3.0 (0)"
+OutFile: "Packages\HoMIWpf.Setup.1.3.0.0_Full_x86_x64_RELEASE.exe"
+InstallDir: ""
+BrandingText: "HoMIWpf Installer v3.1"
+ShowInstDetails: show
+ShowUnInstDetails: show
+Var: "Dialog"
+Var: "optInstallAsService"
+Var: "chkCreateStartMenuShortcuts_Handle"
+Var: "optCreateStartMenuShortcuts"
+Var: "platform"
+Var: "IsComposantChecked"
+Var: "IsHomidomInstalled"
+Var: "HomidomInstalledVersion"
+Var: "IsPreviousInstallIsDeprecated"
+Var: "HomiServiceName"
+Var: "cfg_ipsoap"
+Var: "cfg_portsoap"
+Var: "cfg_idsrv"
+!define: "Unicode2Ansi"="!insertmacro Unicode2Ansi"
+Function: ".onInit"
+File: "UserInfo.dll"->"$PLUGINSDIR\UserInfo.dll" [compress] 1336/4096 bytes
+Plugin Command: GetAccountType
+Pop: $0
+!insertmacro: _If
+!insertmacro: end of _If
+MessageBox: 16: "Administrator rights required!"
+SetErrorLevel: 740
+Quit
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: Log_Init
+FileOpen: $EXEDIR\$EXEFILE.log as w -> $hFileLog
+!insertmacro: end of Log_Init
+!insertmacro: Log_String
+DetailPrint: "[Function .onInit]"
+FileWrite: [Function .onInit]
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "================================================================================"
+FileWrite: ================================================================================
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: " HoMIWpf v1.3.0.0"
+FileWrite:  HoMIWpf v1.3.0.0
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "================================================================================"
+FileWrite: ================================================================================
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "Dossier d'installation : $INSTDIR"
+FileWrite: Dossier d'installation : $INSTDIR
+->$hFileLog
+!insertmacro: end of Log_String
+InitPluginsDir
+File: "nssm.exe"->"$PLUGINSDIR\nssm.exe" [compress] 64965/157696 bytes
+File: "hitb.exe"->"$PLUGINSDIR\hitb.exe" [compress] 4136/9216 bytes
+!insertmacro: MUI_LANGDLL_DISPLAY
+!insertmacro: end of MUI_LANGDLL_DISPLAY
+!insertmacro: Log_String
+DetailPrint: "Vérification de la version du Framework .NET"
+FileWrite: Vérification de la version du Framework .NET
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _If
+!insertmacro: end of _If
+!insertmacro: Log_String
+DetailPrint: "Architecture 64-bit detectée."
+FileWrite: Architecture 64-bit detectée.
+->$hFileLog
+!insertmacro: end of Log_String
+SetRegView: 64
+StrCpy $platform "x64" () ()
+ReadRegStr $INSTDIR HKLM\SOFTWARE\HoMIWpf\InstallDir
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $INSTDIR "$programfiles64\HoMIWpf" () ()
+!insertmacro: _Else
+!insertmacro: end of _Else
+!insertmacro: Log_String
+DetailPrint: "Détection d'une installation antérieure : $INSTDIR"
+FileWrite: Détection d'une installation antérieure : $INSTDIR
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _Else
+!insertmacro: end of _Else
+!insertmacro: Log_String
+DetailPrint: "Architecture 32-bit detectée."
+FileWrite: Architecture 32-bit detectée.
+->$hFileLog
+!insertmacro: end of Log_String
+SetRegView: 32
+StrCpy $platform "x86" () ()
+ReadRegStr $INSTDIR HKLM\SOFTWARE\HoMIWpf\InstallDir
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $INSTDIR "$programfiles32\HoMIWpf" () ()
+!insertmacro: _Else
+!insertmacro: end of _Else
+!insertmacro: Log_String
+DetailPrint: "Détection d'une installation antérieure : $INSTDIR"
+FileWrite: Détection d'une installation antérieure : $INSTDIR
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: Log_String
+DetailPrint: "Dossier d'installation : $INSTDIR"
+FileWrite: Dossier d'installation : $INSTDIR
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "Vérification de la présence des runtimes VC++ 2010 (10.0)"
+FileWrite: Vérification de la présence des runtimes VC++ 2010 (10.0)
+->$hFileLog
+!insertmacro: end of Log_String
+Call "CheckVC10Redist"
+!insertmacro: Log_String
+DetailPrint: "Vérification de la présence des runtimes VC++ 2012 (11.0)"
+FileWrite: Vérification de la présence des runtimes VC++ 2012 (11.0)
+->$hFileLog
+!insertmacro: end of Log_String
+Call "CheckVC11Redist"
+!insertmacro: Log_String
+DetailPrint: "Vérification de la présence des runtimes VC++ 2013 (12.0)"
+FileWrite: Vérification de la présence des runtimes VC++ 2013 (12.0)
+->$hFileLog
+!insertmacro: end of Log_String
+Call "CheckVC12Redist"
+!insertmacro: Log_String
+DetailPrint: "Le dossier d'installation par défaut est '$INSTDIR'."
+FileWrite: Le dossier d'installation par défaut est '$INSTDIR'.
+->$hFileLog
+!insertmacro: end of Log_String
+StrCpy $IsHomidomInstalled "0" () ()
+StrCpy $IsPreviousInstallIsDeprecated "0" () ()
+StrCpy $HomiServiceName "HoMIServicE" () ()
+StrCpy $cfg_ipsoap "localhost" () ()
+StrCpy $cfg_portsoap "7999" () ()
+StrCpy $cfg_idsrv "123456789" () ()
+StrCpy $0 "0" () ()
+!insertmacro: _Do
+!insertmacro: end of _Do
+EnumRegKey $1 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$0
+!insertmacro: _If
+!insertmacro: end of _If
+IntOp: $0=$0+1
+ReadRegStr $2 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$1\DisplayName
+!insertmacro: _If
+!insertmacro: end of _If
+ReadRegDword $3 HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$1\WindowsInstaller
+!insertmacro: Log_String
+DetailPrint: "Une installation existante a été trouvée dans la clé de registre 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$1'"
+FileWrite: Une installation existante a été trouvée dans la clé de registre 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$1'
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _If
+!insertmacro: end of _If
+MessageBox: 48: "Une ancienne installation a été détectée. Veuillez effectuer une sauvegarde de vos données, désinstaller manuellement l'ancienne version et relancer une nouvelle installation."
+Abort: ""
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _Loop
+!insertmacro: end of _Loop
+!insertmacro: Log_String
+DetailPrint: "Recherche d'une installation exitante dans le dossier '$INSTDIR'."
+FileWrite: Recherche d'une installation exitante dans le dossier '$INSTDIR'.
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $IsHomidomInstalled "1" () ()
+!insertmacro: GetFileVersionCall
+!insertmacro: end of GetFileVersionCall
+!insertmacro: Log_String
+DetailPrint: "Une installation existante a été trouvé dans le dossier '$INSTDIR'. Le numéro de version est '$HomidomInstalledVersion'"
+FileWrite: Une installation existante a été trouvé dans le dossier '$INSTDIR'. Le numéro de version est '$HomidomInstalledVersion'
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+Call "LoadConfig"
+!insertmacro: Log_String
+DetailPrint: "Dossier d'installation : $INSTDIR"
+FileWrite: Dossier d'installation : $INSTDIR
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "IsHomidomInstalled: $IsHomidomInstalled"
+FileWrite: IsHomidomInstalled: $IsHomidomInstalled
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "HomidomInstalledVersion: $HomidomInstalledVersion"
+FileWrite: HomidomInstalledVersion: $HomidomInstalledVersion
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "IsHomidomInstalledAsServiceNSSM: $IsHomidomInstalledAsServiceNSSM"
+FileWrite: IsHomidomInstalledAsServiceNSSM: $IsHomidomInstalledAsServiceNSSM
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "IsHomidomInstalledAsService: $IsHomidomInstalledAsService"
+FileWrite: IsHomidomInstalledAsService: $IsHomidomInstalledAsService
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "================================================================================"
+FileWrite: ================================================================================
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "Début de l'installation."
+FileWrite: Début de l'installation.
+->$hFileLog
+!insertmacro: end of Log_String
+FunctionEnd
+Function: "LoadConfig"
+!insertmacro: Log_String
+DetailPrint: "[Function LoadConfig]"
+FileWrite: [Function LoadConfig]
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "Recherche du fichier de configuration."
+FileWrite: Recherche du fichier de configuration.
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _If
+!insertmacro: end of _If
+!insertmacro: Log_String
+DetailPrint: "-- fichier trouvé, récupération des informations."
+FileWrite: -- fichier trouvé, récupération des informations.
+->$hFileLog
+!insertmacro: end of Log_String
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 5520/12288 bytes
+Plugin Command: create
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 0/12288 bytes
+Plugin Command: load $INSTDIR\Config\HoMIWpf.xml
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 0/12288 bytes
+Plugin Command: select /homidom/server
+!insertmacro: _If
+!insertmacro: end of _If
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 0/12288 bytes
+Plugin Command: getAttribute ipsoap
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $cfg_ipsoap "$3" () ()
+!insertmacro: Log_String
+DetailPrint: "-- ipsoap = $cfg_ipsoap"
+FileWrite: -- ipsoap = $cfg_ipsoap
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+Plugin Command: getAttribute portsoap
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $cfg_portsoap "$3" () ()
+!insertmacro: Log_String
+DetailPrint: "-- PortSoap = $cfg_portsoap"
+FileWrite: -- PortSoap = $cfg_portsoap
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+Plugin Command: getAttribute idsrv
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $cfg_idsrv "$3" () ()
+!insertmacro: Log_String
+DetailPrint: "-- idsrv = $cfg_idsrv"
+FileWrite: -- idsrv = $cfg_idsrv
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _Else
+!insertmacro: end of _Else
+!insertmacro: Log_String
+DetailPrint: "-- fichier introuvable, création d'un nouveau..."
+FileWrite: -- fichier introuvable, création d'un nouveau...
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+FunctionEnd
+Function: "SaveConfig"
+!insertmacro: Log_String
+DetailPrint: "[Function SaveConfig]"
+FileWrite: [Function SaveConfig]
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "Sauvegarde de la configuration."
+FileWrite: Sauvegarde de la configuration.
+->$hFileLog
+!insertmacro: end of Log_String
+Plugin Command: create
+Plugin Command: load $INSTDIR\Config\HoMIWpf.xml
+Plugin Command: select /homidom/server
+!insertmacro: _If
+!insertmacro: end of _If
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 0/12288 bytes
+Plugin Command: setAttribute ipsoap $cfg_ipsoap
+Plugin Command: setAttribute portsoap $cfg_portsoap
+Plugin Command: setAttribute idsrv $cfg_idsrv
+!insertmacro: Log_String
+DetailPrint: "-- ipsoap = $cfg_ipsoap"
+FileWrite: -- ipsoap = $cfg_ipsoap
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "-- portsoap = $cfg_portsoap"
+FileWrite: -- portsoap = $cfg_portsoap
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "-- idsrv = $cfg_idsrv"
+FileWrite: -- idsrv = $cfg_idsrv
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 0/12288 bytes
+Plugin Command: save $INSTDIR\Config\HoMIWpf.xml
+FunctionEnd
+Function: ".onInstSuccess"
+!insertmacro: Log_String
+DetailPrint: "[Function .onInstSuccess]"
+FileWrite: [Function .onInstSuccess]
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: Log_String
+DetailPrint: "Installation terminée avec succès."
+FileWrite: Installation terminée avec succès.
+->$hFileLog
+!insertmacro: end of Log_String
+FunctionEnd
+Function: "un.onInit"
+!insertmacro: Log_String
+DetailPrint: "[Function un.onInit]"
+FileWrite: [Function un.onInit]
+->$hFileLog
+!insertmacro: end of Log_String
+InitPluginsDir
+File: "nssm.exe"->"$PLUGINSDIR\nssm.exe" [compress] 64965/157696 bytes
+File: "hitb.exe"->"$PLUGINSDIR\hitb.exe" [compress] 4136/9216 bytes
+!insertmacro: _If
+!insertmacro: end of _If
+!insertmacro: Log_String
+DetailPrint: "Architecture 64-bit detectée."
+FileWrite: Architecture 64-bit detectée.
+->$hFileLog
+!insertmacro: end of Log_String
+SetRegView: 64
+StrCpy $platform "x64" () ()
+ReadRegStr $INSTDIR HKLM\SOFTWARE\HoMIWpf\InstallDir
+!insertmacro: Log_String
+DetailPrint: "Détection du dossier d'installation : $INSTDIR"
+FileWrite: Détection du dossier d'installation : $INSTDIR
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _Else
+!insertmacro: end of _Else
+!insertmacro: Log_String
+DetailPrint: "Architecture 32-bit detectée."
+FileWrite: Architecture 32-bit detectée.
+->$hFileLog
+!insertmacro: end of Log_String
+SetRegView: 32
+StrCpy $platform "x86" () ()
+ReadRegStr $INSTDIR HKLM\SOFTWARE\HoMIWpf\InstallDir
+!insertmacro: Log_String
+DetailPrint: "Détection du dossier d'installation : $INSTDIR"
+FileWrite: Détection du dossier d'installation : $INSTDIR
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+FunctionEnd
+InstType: 1="Complete"
+Section: "" ->(HoMIDoM_REQUIREMENT)
+!insertmacro: Log_String
+DetailPrint: "[HoMIDoM_REQUIREMENT]"
+FileWrite: [HoMIDoM_REQUIREMENT]
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: CheckNetFramework
+Var: "dotNetUrl452"
+Var: "dotNetReadableVersion452"
+!define: "DOTNET46_URL"="http://go.microsoft.com/fwlink/?LinkId=528232"
+!define: "DOTNET452_URL"="http://go.microsoft.com/fwlink/?LinkId=397708"
+!define: "DOTNET451_URL"="http://go.microsoft.com/fwlink/?LinkId=322116"
+!define: "DOTNET45_URL"="http://go.microsoft.com/fwlink/?LinkId=225702"
+!define: "DOTNET40Full_URL"="http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=0a391abd-25c1-4fc0-919f-b21f31ab88b7&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f9%2f5%2fA%2f95A9616B-7A37-4AF6-BC36-D6EA96C8DAAE%2fdotNetFx40_Full_x86_x64.exe"
+!define: "DOTNET40Client_URL"="http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=e5ad0459-cbcc-4b4f-97b6-fb17111cf544&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f5%2f6%2f2%2f562A10F9-C9F4-4313-A044-9C94E0A8FAC8%2fdotNetFx40_Client_x86_x64.exe"
+!define: "DOTNET35_URL"="http://download.microsoft.com/download/2/0/e/20e90413-712f-438c-988e-fdaa79a8ac3d/dotnetfx35.exe"
+!define: "DOTNET30_URL"="http://download.microsoft.com/download/2/0/e/20e90413-712f-438c-988e-fdaa79a8ac3d/dotnetfx35.exe"
+!define: "DOTNET20_URL"="http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=0856eacb-4362-4b0d-8edd-aab15c5e04f5&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f5%2f6%2f7%2f567758a3-759e-473e-bf8f-52154438565a%2fdotnetfx.exe"
+!define: "DOTNET11_URL"="http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=262d25e3-f589-4842-8157-034d1e7cf3a3&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2fa%2fa%2fc%2faac39226-8825-44ce-90e3-bf8203e74006%2fdotnetfx.exe"
+!define: "DOTNET10_URL"="http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=262d25e3-f589-4842-8157-034d1e7cf3a3&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2fa%2fa%2fc%2faac39226-8825-44ce-90e3-bf8203e74006%2fdotnetfx.exe"
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $dotNetUrl452 "http://go.microsoft.com/fwlink/?LinkId=528232" () ()
+StrCpy $dotNetReadableVersion452 "4.6" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://go.microsoft.com/fwlink/?LinkId=397708" () ()
+StrCpy $dotNetReadableVersion452 "4.52" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://go.microsoft.com/fwlink/?LinkId=322116" () ()
+StrCpy $dotNetReadableVersion452 "4.51" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://go.microsoft.com/fwlink/?LinkId=225702" () ()
+StrCpy $dotNetReadableVersion452 "4.5" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=0a391abd-25c1-4fc0-919f-b21f31ab88b7&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f9%2f5%2fA%2f95A9616B-7A37-4AF6-BC36-D6EA96C8DAAE%2fdotNetFx40_Full_x86_x64.exe" () ()
+StrCpy $dotNetReadableVersion452 "4.0 Full" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=e5ad0459-cbcc-4b4f-97b6-fb17111cf544&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f5%2f6%2f2%2f562A10F9-C9F4-4313-A044-9C94E0A8FAC8%2fdotNetFx40_Client_x86_x64.exe" () ()
+StrCpy $dotNetReadableVersion452 "4.0 Client" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://download.microsoft.com/download/2/0/e/20e90413-712f-438c-988e-fdaa79a8ac3d/dotnetfx35.exe" () ()
+StrCpy $dotNetReadableVersion452 "3.5" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://download.microsoft.com/download/2/0/e/20e90413-712f-438c-988e-fdaa79a8ac3d/dotnetfx35.exe" () ()
+StrCpy $dotNetReadableVersion452 "3.0" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=0856eacb-4362-4b0d-8edd-aab15c5e04f5&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f5%2f6%2f7%2f567758a3-759e-473e-bf8f-52154438565a%2fdotnetfx.exe" () ()
+StrCpy $dotNetReadableVersion452 "2.0" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=262d25e3-f589-4842-8157-034d1e7cf3a3&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2fa%2fa%2fc%2faac39226-8825-44ce-90e3-bf8203e74006%2fdotnetfx.exe" () ()
+StrCpy $dotNetReadableVersion452 "1.1" () ()
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+StrCpy $dotNetUrl452 "http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=262d25e3-f589-4842-8157-034d1e7cf3a3&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2fa%2fa%2fc%2faac39226-8825-44ce-90e3-bf8203e74006%2fdotnetfx.exe" () ()
+StrCpy $dotNetReadableVersion452 "1.0" () ()
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+DetailPrint: "Vérification de la version de .NET Framework..."
+Push: $0
+Push: $1
+Push: $2
+Push: $3
+Push: $4
+Push: $5
+Push: $6
+Push: $7
+File: "DotNetChecker.dll"->"$PLUGINSDIR\DotNetChecker.dll" [compress] 41107/81920 bytes
+Plugin Command: IsDotNet452Installed
+Pop: $0
+!insertmacro: _If
+!insertmacro: end of _If
+!insertmacro: _Or
+!insertmacro: end of _Or
+DetailPrint: ".NET Framework $dotNetReadableVersion452 non trouvé, téléchargement nécessaire pour exécuter le programme."
+Goto: NoDotNET452
+!insertmacro: _Else
+!insertmacro: end of _Else
+DetailPrint: ".NET Framework $dotNetReadableVersion452 trouvé, installation inutile."
+Goto: NewDotNET452
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+MessageBox: 51: ".NET Framework n'est pas installé. Version requise: $dotNetReadableVersion452.
+Téléchargement de .NET Framework $dotNetReadableVersion452 depuis www.microsoft.com ?" (on IDYES goto DownloadDotNET452)
+Goto: GiveUpDotNET452
+DetailPrint: "Démarrage du téléchargement de .NET Framework $dotNetReadableVersion452."
+File: "NSISdl.dll"->"$PLUGINSDIR\NSISdl.dll" [compress] 0/14848 bytes
+Plugin Command: download $dotNetUrl452 $TEMP\dotnetfx.exe
+DetailPrint: "Téléchargement terminé."
+Pop: $0
+!insertmacro: _If
+!insertmacro: end of _If
+MessageBox: 52: "Télééchargement annulé.  Poursuite de l'installation ?" (on IDYES goto NewDotNET452)
+!insertmacro: _ElseIf
+!insertmacro: end of _ElseIf
+MessageBox: 52: "Le téléchargement a échoué:
+$0
+
+Poursuite de l'installation?" (on IDYES goto NewDotNET452)
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+DetailPrint: "Mise en pause de l'installation pendant le téléchargement de l'installeur de .NET Framework."
+ExecWait: "$TEMP\dotnetfx.exe /passive /norestart /c:"install /passive /norestart"" (->)
+DetailPrint: "Installation/Mise a jour de .NET Framework terminé. Suppression de l'installeur .NET Framework."
+Delete: "$TEMP\dotnetfx.exe"
+DetailPrint: "Installeur .NET Framework supprimé."
+Goto: NewDotNet452
+Abort: "Installation annulée par l'utilisateur."
+DetailPrint: "Poursuite de l'installation."
+Pop: $7
+Pop: $6
+Pop: $5
+Pop: $4
+Pop: $3
+Pop: $2
+Pop: $1
+Pop: $0
+!insertmacro: end of CheckNetFramework
+SectionEnd
+Section: "" ->(HoMIDoM_FRAMEWORK)
+!insertmacro: Log_String
+DetailPrint: "[HoMIDoM_FRAMEWORK]"
+FileWrite: [HoMIDoM_FRAMEWORK]
+->$hFileLog
+!insertmacro: end of Log_String
+SectionIn: [RO] 
+SetOutPath: "$INSTDIR"
+CreateDirectory: "$INSTDIR"
+CreateDirectory: "$INSTDIR\Cache"
+CreateDirectory: "$INSTDIR\Config"
+CreateDirectory: "$INSTDIR\Images"
+File: "hitb.exe" [compress] 0/9216 bytes
+SectionEnd
+Section: "HoMIDoM Client WPF" ->(HoMIDoM_WPFCLIENT)
+!insertmacro: Log_String
+DetailPrint: "[HoMIDoM_WPF]"
+FileWrite: [HoMIDoM_WPF]
+->$hFileLog
+!insertmacro: end of Log_String
+SectionIn: [0] [3] 
+SetOverwrite: on
+SetOutPath: "$INSTDIR"
+CreateDirectory: "$INSTDIR\Config"
+CreateDirectory: "$INSTDIR\Logs"
+CreateDirectory: "$INSTDIR\Images"
+CreateDirectory: "$INSTDIR\Cache\Images"
+SetOverwrite: on
+File: "HoMIWpF.exe" [compress] 2237140/2636288 bytes
+File: "HoMIWpF.exe.config" [compress] 1207/3721 bytes
+File: "HoMIWpF.xml" [compress] 2860/17166 bytes
+SetOverwrite: off
+File: "De.TorstenMandelkow.MetroChart.dll" [compress] 40841/118784 bytes
+File: "HoMIDom.dll" [compress] 154210/477696 bytes
+File: "HoMIDomWebAPI.dll" [compress] 10557/34816 bytes
+File: "InputSimulator.dll" [compress] 6137/13824 bytes
+File: "Ionic.Zip.dll" [compress] 267602/445440 bytes
+File: "Jarloo.Calendar.dll" [compress] 11481/21504 bytes
+File: "LiveCharts.Wpf.dll" [compress] 63008/189952 bytes
+File: "Livecharts.dll" [compress] 46902/121344 bytes
+File: "Microsoft.AspNet.SignalR.Client.dll" [compress] 47930/106168 bytes
+File: "Microsoft.AspNet.SignalR.Core.dll" [compress] 116219/273080 bytes
+File: "Microsoft.AspNet.SignalR.Owin.dll" [compress] 24395/51384 bytes
+File: "Microsoft.Owin.Host.HttpListener.dll" [compress] 37345/86192 bytes
+File: "Microsoft.Owin.Hosting.dll" [compress] 29617/63664 bytes
+File: "Microsoft.Owin.dll" [compress] 31026/70320 bytes
+File: "MjpegProcessor.dll" [compress] 7094/25600 bytes
+File: "NCalc.dll" [compress] 63748/194560 bytes
+File: "NCrontab.dll" [compress] 6991/28672 bytes
+File: "Newtonsoft.Json.dll" [compress] 156709/391680 bytes
+File: "Owin.dll" [compress] 1953/4608 bytes
+File: "System.Data.SQLite.Linq.dll" [compress] 43451/181248 bytes
+File: "System.Data.SQLite.dll" [compress] 66837/199168 bytes
+File: "System.Data.SQLite_32.dll" [compress] 457916/904704 bytes
+File: "System.Data.SQLite_64b.DLL" [compress] 525334/1102336 bytes
+File: "System.Windows.Controls.DataVisualization.Toolkit.dll" [compress] 110534/278872 bytes
+File: "System.Windows.Interactivity.dll" [compress] 16171/39936 bytes
+File: "WPFToolkit.dll" [compress] 174104/467288 bytes
+File: "WpfAnimatedGif.dll" [compress] 16982/36864 bytes
+File: "WpfKb.dll" [compress] 22440/59392 bytes
+File: "WpfPropertyGrid.dll" [compress] 67602/178688 bytes
+File: "taglib-sharp.dll" [compress] 115413/307712 bytes
+SetOverwrite: on
+SetOutPath: "$INSTDIR\Images"
+File: "Thumbs.db" [compress] 7843/16384 bytes
+File: "fond-defaut.png" [compress] 603539/609808 bytes
+File: "fond-logo.png" [compress] 628767/635570 bytes
+File: "icone.ico" [compress] 1782/4286 bytes
+File: "logo.jpg" [compress] 52344/56707 bytes
+File: Descending to: "..\RELEASE_HoMIWpF\Images\Devices\"
+File: "Defaut-128.png" [compress] 9933/9959 bytes
+File: "Defaut.png" [compress] 0/9959 bytes
+File: "appareil-defaut.png" [compress] 15804/15955 bytes
+File: "appareil-off.png" [compress] 10409/10640 bytes
+File: "appareil-on.png" [compress] 10469/10701 bytes
+File: "audio-defaut.png" [compress] 16275/16533 bytes
+File: "barometre-defaut.png" [compress] 22634/22852 bytes
+File: "batterie-0.png" [compress] 5099/5245 bytes
+File: "batterie-100.png" [compress] 4880/5009 bytes
+File: "batterie-25.png" [compress] 5308/5420 bytes
+File: "batterie-50.png" [compress] 5483/5584 bytes
+File: "batterie-75.png" [compress] 5527/5602 bytes
+File: "batterie-defaut.png" [compress] 6432/6544 bytes
+File: "compteur-defaut.png" [compress] 6457/6517 bytes
+File: "contact-defaut.png" [compress] 22088/22098 bytes
+File: "contact-off.png" [compress] 20669/20696 bytes
+File: "contact-on.png" [compress] 21232 bytes
+File: "detecteur-defaut.png" [compress] 12221 bytes
+File: "detecteur-off.png" [compress] 16412/16455 bytes
+File: "detecteur-on.png" [compress] 16434 bytes
+File: "directionvent-defaut.png" [compress] 6808/6909 bytes
+File: "energieinstantanee-defaut.png" [compress] 23080 bytes
+File: "energietotale-defaut.png" [compress] 21416/21420 bytes
+File: "foobar-defaut.png" [compress] 0/16533 bytes
+File: "freebox-defaut.png" [compress] 15857/15982 bytes
+File: "generiquebooleen-defaut.png" [compress] 17245/17281 bytes
+File: "generiquebooleen-off.png" [compress] 0/17281 bytes
+File: "generiquebooleen-on.png" [compress] 17769 bytes
+File: "generiquestring-defaut.png" [compress] 15959/16022 bytes
+File: "generiquevalue-defaut.png" [compress] 16217/16287 bytes
+File: "humidite-defaut.png" [compress] 5785/5830 bytes
+File: "jour-defaut.png" [compress] 14333/14454 bytes
+File: "jour-jour.png" [compress] 9890 bytes
+File: "jour-nuit.png" [compress] 10683 bytes
+File: "lampe-0.png" [compress] 18687 bytes
+File: "lampe-100.png" [compress] 17423 bytes
+File: "lampe-25.png" [compress] 21948 bytes
+File: "lampe-50.png" [compress] 22253 bytes
+File: "lampe-75.png" [compress] 21361 bytes
+File: "lampe-defaut.png" [compress] 0/17423 bytes
+File: "meteo-defaut.png" [compress] 18632/18633 bytes
+File: "multimedia-defaut.png" [compress] 22224/22418 bytes
+File: "pluiecourant-defaut.png" [compress] 8345/8352 bytes
+File: "pluietotal-defaut.png" [compress] 0/8352 bytes
+File: "switch-defaut.png" [compress] 7154/7187 bytes
+File: "switch-off.png" [compress] 10455/10480 bytes
+File: "switch-on.png" [compress] 10258 bytes
+File: "telecommande-defaut.png" [compress] 17180/17213 bytes
+File: "temperature-defaut.png" [compress] 9208 bytes
+File: "temperatureconsigne-defaut.png" [compress] 11672 bytes
+File: "vitessevent-defaut.png" [compress] 0/6909 bytes
+File: "volet-0.png" [compress] 14094 bytes
+File: "volet-100.png" [compress] 15361 bytes
+File: "volet-25.png" [compress] 14995 bytes
+File: "volet-50.png" [compress] 14908 bytes
+File: "volet-75.png" [compress] 15070 bytes
+File: "volet-defaut.png" [compress] 0/14908 bytes
+File: Descending to: "..\RELEASE_HoMIWpF\Images\Icones\"
+File: "01.png" [compress] 23256 bytes
+File: "36.png" [compress] 19788/19794 bytes
+File: "Defaut-128.png" [compress] 0/9959 bytes
+File: "Lune.png" [compress] 0/19794 bytes
+File: "Soleil.png" [compress] 0/23256 bytes
+File: "ajouter-32.png" [compress] 1815 bytes
+File: "ajouter-la-brique-32.png" [compress] 2179 bytes
+File: "apply-48.png" [compress] 2653 bytes
+File: "drapeau-vert-32.png" [compress] 1247 bytes
+File: "fermer-croix-supprimer-128.png" [compress] 12742/13245 bytes
+File: "home-128.png" [compress] 23266/23347 bytes
+File: "k0.png" [compress] 1773 bytes
+File: "k1.png" [compress] 1662 bytes
+File: "k2.png" [compress] 1770 bytes
+File: "k3.png" [compress] 1821 bytes
+File: "k4.png" [compress] 1679 bytes
+File: "k5.png" [compress] 1770 bytes
+File: "k6.png" [compress] 1834 bytes
+File: "k7.png" [compress] 1700 bytes
+File: "k8.png" [compress] 1831 bytes
+File: "k9.png" [compress] 1818 bytes
+File: "kmoi.png" [compress] 1526 bytes
+File: "kmute.png" [compress] 8663 bytes
+File: "kplus.png" [compress] 1548 bytes
+File: "lecture-48.png" [compress] 1769 bytes
+File: "script-128.png" [compress] 9619/9705 bytes
+File: "stop-48.png" [compress] 1114 bytes
+File: "temps-ajouter-32.png" [compress] 2443 bytes
+File: "tpbtn.png" [compress] 800/815 bytes
+File: "tree-48.png" [compress] 2189 bytes
+File: "user.png" [compress] 8026 bytes
+File: "workflow.png" [compress] 44381/45835 bytes
+File: Descending to: "..\RELEASE_HoMIWpF\Images\Meteo\"
+File: "0.png" [compress] 15253 bytes
+File: "1.png" [compress] 19806/42625 bytes
+File: "10.png" [compress] 14068/14106 bytes
+File: "11.png" [compress] 13407 bytes
+File: "12.png" [compress] 14497 bytes
+File: "13.png" [compress] 12465/42527 bytes
+File: "14.png" [compress] 14632/14779 bytes
+File: "15.png" [compress] 5044/42625 bytes
+File: "16.png" [compress] 0/14779 bytes
+File: "17.png" [compress] 0/15253 bytes
+File: "18.png" [compress] 0/14497 bytes
+File: "19.png" [compress] 9376/9690 bytes
+File: "2.png" [compress] 0/42625 bytes
+File: "20.png" [compress] 7030/7309 bytes
+File: "21.png" [compress] 18999/19295 bytes
+File: "22.png" [compress] 0/9690 bytes
+File: "23.png" [compress] 17411 bytes
+File: "24.png" [compress] 0/17411 bytes
+File: "25.png" [compress] 22278 bytes
+File: "26.png" [compress] 11960/11998 bytes
+File: "27.png" [compress] 12568 bytes
+File: "28.png" [compress] 11957 bytes
+File: "29.png" [compress] 11114 bytes
+File: "3.png" [compress] 0/15253 bytes
+File: "30.png" [compress] 10687 bytes
+File: "31.png" [compress] 10234 bytes
+File: "32.png" [compress] 7398 bytes
+File: "33.png" [compress] 0/10234 bytes
+File: "34.png" [compress] 0/10687 bytes
+File: "35.png" [compress] 0/15253 bytes
+File: "36.png" [compress] 0/7398 bytes
+File: "37.png" [compress] 12519/42568 bytes
+File: "38.png" [compress] 0/42568 bytes
+File: "39.png" [compress] 0/14497 bytes
+File: "4.png" [compress] 0/15253 bytes
+File: "40.png" [compress] 0/14497 bytes
+File: "41.png" [compress] 0/14779 bytes
+File: "42.png" [compress] 0/14779 bytes
+File: "43.png" [compress] 19799/42625 bytes
+File: "44.png" [compress] 0/10687 bytes
+File: "45.png" [compress] 14487 bytes
+File: "46.png" [compress] 16360/16386 bytes
+File: "47.png" [compress] 17048 bytes
+File: "5.png" [compress] 14631/42625 bytes
+File: "6.png" [compress] 0/14497 bytes
+File: "7.png" [compress] 0/42625 bytes
+File: "8.png" [compress] 0/13407 bytes
+File: "9.png" [compress] 0/13407 bytes
+File: "chance_of_rain.png" [compress] 22093/22099 bytes
+File: "chance_of_snow.png" [compress] 11502/11700 bytes
+File: "chance_of_storm.png" [compress] 20579/20592 bytes
+File: "chance_of_tstorm.png" [compress] 0/20592 bytes
+File: "cloudy.png" [compress] 12701/12940 bytes
+File: "dust.png" [compress] 0/17411 bytes
+File: "flurries.png" [compress] 15031/15156 bytes
+File: "fog.png" [compress] 0/9690 bytes
+File: "haze.png" [compress] 0/19295 bytes
+File: "icy.png" [compress] 19339/19757 bytes
+File: "mist.png" [compress] 17442/17496 bytes
+File: "mostly_cloudy.png" [compress] 20579/20621 bytes
+File: "mostly_sunny.png" [compress] 17544/17559 bytes
+File: "na.png" [compress] 15142 bytes
+File: "partly_cloudy.png" [compress] 0/17559 bytes
+File: "rain.png" [compress] 17595/17671 bytes
+File: "sleet.png" [compress] 0/15156 bytes
+File: "smoke.png" [compress] 0/9690 bytes
+File: "snow.png" [compress] 17994/18639 bytes
+File: "storm.png" [compress] 0/17496 bytes
+File: "sunny.png" [compress] 16697/16703 bytes
+File: "thunderstorm.png" [compress] 18065/18135 bytes
+File: Descending to: "..\RELEASE_HoMIWpF\Images\Users\"
+File: "Defaut.png" [compress] 0/8026 bytes
+File: Descending to: "..\RELEASE_HoMIWpF\Images\Zones\"
+File: Descending to: "..\RELEASE_HoMIWpF\Images\Zones\Icon\"
+File: "Defaut.png" [compress] 0/9959 bytes
+File: Descending to: "..\RELEASE_HoMIWpF\Images\Zones\Image\"
+File: "defaut.jpg" [compress] 60123/60391 bytes
+File: Returning to: "..\RELEASE_HoMIWpF\Images"
+SetOverwrite: off
+SetOutPath: "$INSTDIR\Config"
+File: "HoMIWpF.bak" [compress] 1269/5852 bytes
+File: "HoMIWpF.sav" [compress] 0/5852 bytes
+File: "HoMIWpF.xml" [compress] 2353/14030 bytes
+SectionEnd
+Section: "" ->(HoMIDoM_SHORTCUTS)
+!insertmacro: Log_String
+DetailPrint: "[HoMIDoM_SHORTCUTS]"
+FileWrite: [HoMIDoM_SHORTCUTS]
+->$hFileLog
+!insertmacro: end of Log_String
+SetOutPath: "$INSTDIR"
+CreateDirectory: "$SMPROGRAMS\HoMIWpf"
+Delete: "$SMPROGRAMS\HoMIWpf\*.*"
+!insertmacro: _If
+!insertmacro: end of _If
+CreateShortCut: "$SMPROGRAMS\HoMIWpf\HoMIDoM WPF Client.lnk"->"$INSTDIR\HoMIWpF.exe"  icon:,0, showmode=0x0, hotkey=0x0, comment=
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+WriteINIStr: [InternetShortcut] URL=http://www.homidom.com in $SMPROGRAMS\HoMIWpf\Visitez le site Web HoMIDoM.URL
+SectionEnd
+Section: "" ->(HoMIDoM_POST)
+Call "WriteUnInstaller"
+Call "SaveConfig"
+SectionEnd
+Function: "un.ModifyUnWelcome"
+Plugin Command: Call shell32::SHGetSpecialFolderPath(i $HWNDPARENT, t .r1, i 0x23, i0)i.r0
+StrCpy $SF_COMMONAPPDATA "$1" () ()
+Plugin Command: CreateControl BUTTON 0x40000000|0x10000000|0x04000000|0x00010000|0x00000000|0x00000C00|0x00000003|0x00002000 0 120u -20u 70% 12u Supprimer tout : (Base de données, configuration, etc.)
+Pop: $fulluninstbox
+!insertmacro: __NSD_Uncheck
+!insertmacro: __NSD_SetState
+SendMessage:($fulluninstbox,0x00F1,0,0)
+!insertmacro: end of __NSD_SetState
+!insertmacro: end of __NSD_Uncheck
+FunctionEnd
+Function: "un.LeaveUnWelcome"
+!insertmacro: __NSD_GetState
+SendMessage:(->$fulluninstbox_state)($fulluninstbox,0x00F0,0,0)
+!insertmacro: end of __NSD_GetState
+!insertmacro: _If
+!insertmacro: end of _If
+MessageBox: 4: "Vous êtes sur le point de supprimer totalement HoMIWpf.
+
+Suite à cette opération, une nouvelle installation créera une configuration vièrge de toutes données.
+
+Vous confirmez ?" (on IDYES goto FinishLeaveUnWelcome)
+StrCpy $fulluninstbox_state "0" () ()
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+FunctionEnd
+Section: "Uninstall"
+SetOutPath: "$INSTDIR"
+File: "Banner.dll"->"$PLUGINSDIR\Banner.dll" [compress] 1473/4096 bytes
+Plugin Command: show /set 76 HoMIWpf : Désinstallation...
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 5520/12288 bytes
+Plugin Command: create
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 0/12288 bytes
+Plugin Command: load $INSTDIR\Config\HoMIDom.xml
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 0/12288 bytes
+Plugin Command: select /homidom/server
+!insertmacro: _If
+!insertmacro: end of _If
+File: "nsisXML.dll"->"$PLUGINSDIR\nsisXML.dll" [compress] 0/12288 bytes
+Plugin Command: getAttribute portsoap
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $cfg_portsoap "$3" () ()
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+File: "Banner.dll"->"$PLUGINSDIR\Banner.dll" [compress] 0/4096 bytes
+Plugin Command: destroy
+DeleteRegKey: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf
+!insertmacro: _If
+!insertmacro: end of _If
+!insertmacro: RemoveFilesAndSubDirs
+!define: "Index_RemoveFilesAndSubDirs"="RemoveFilesAndSubDirs_644.3"
+Push: $R0
+Push: $R1
+Push: $R2
+!insertmacro: GetCleanDir
+!define: "Index_GetCleanDir"="GetCleanDir_Line644.9.3"
+Push: $R0
+Push: $R1
+StrCpy $R0 "$INSTDIR\" () ()
+StrCmp "$R0" "" equal=GetCleanDir_Line644.9.3-finish, nonequal=
+StrCpy $R1 "$R0" () (-1)
+StrCmp "$R1" "\" equal=GetCleanDir_Line644.9.3-finish, nonequal=
+StrCpy $R0 "$R0\" () ()
+Pop: $R1
+Exch($R0,0)
+!undef: "Index_GetCleanDir"
+!insertmacro: end of GetCleanDir
+Pop: $R2
+FindFirst: spec="$R2*.*" handle=$R0 output=$R1
+StrCmp "$R1" "" equal=RemoveFilesAndSubDirs_644.3-done, nonequal=
+StrCmp "$R1" "." equal=RemoveFilesAndSubDirs_644.3-next, nonequal=
+StrCmp "$R1" ".." equal=RemoveFilesAndSubDirs_644.3-next, nonequal=
+IfFileExists: "$R2$R1\*.*" ? RemoveFilesAndSubDirs_644.3-directory : 
+Delete: "$R2$R1"
+Goto: RemoveFilesAndSubDirs_644.3-next
+RMDir: /r "$R2$R1"
+FindNext: handle=$R0 output=$R1
+Goto: RemoveFilesAndSubDirs_644.3-loop
+FindClose: $R0
+Pop: $R2
+Pop: $R1
+Pop: $R0
+!undef: "Index_RemoveFilesAndSubDirs"
+!insertmacro: end of RemoveFilesAndSubDirs
+!insertmacro: RemoveFilesAndSubDirs
+!define: "Index_RemoveFilesAndSubDirs"="RemoveFilesAndSubDirs_645.3"
+Push: $R0
+Push: $R1
+Push: $R2
+!insertmacro: GetCleanDir
+!define: "Index_GetCleanDir"="GetCleanDir_Line645.9.3"
+Push: $R0
+Push: $R1
+StrCpy $R0 "$SF_COMMONAPPDATA\HoMIWpF\" () ()
+StrCmp "$R0" "" equal=GetCleanDir_Line645.9.3-finish, nonequal=
+StrCpy $R1 "$R0" () (-1)
+StrCmp "$R1" "\" equal=GetCleanDir_Line645.9.3-finish, nonequal=
+StrCpy $R0 "$R0\" () ()
+Pop: $R1
+Exch($R0,0)
+!undef: "Index_GetCleanDir"
+!insertmacro: end of GetCleanDir
+Pop: $R2
+FindFirst: spec="$R2*.*" handle=$R0 output=$R1
+StrCmp "$R1" "" equal=RemoveFilesAndSubDirs_645.3-done, nonequal=
+StrCmp "$R1" "." equal=RemoveFilesAndSubDirs_645.3-next, nonequal=
+StrCmp "$R1" ".." equal=RemoveFilesAndSubDirs_645.3-next, nonequal=
+IfFileExists: "$R2$R1\*.*" ? RemoveFilesAndSubDirs_645.3-directory : 
+Delete: "$R2$R1"
+Goto: RemoveFilesAndSubDirs_645.3-next
+RMDir: /r "$R2$R1"
+FindNext: handle=$R0 output=$R1
+Goto: RemoveFilesAndSubDirs_645.3-loop
+FindClose: $R0
+Pop: $R2
+Pop: $R1
+Pop: $R0
+!undef: "Index_RemoveFilesAndSubDirs"
+!insertmacro: end of RemoveFilesAndSubDirs
+DeleteRegKey: HKLM\SOFTWARE\HoMIWpF
+RMDir: "$SF_COMMONAPPDATA\HoMIAdmiN"
+RMDir: "$SF_COMMONAPPDATA\HoMIWpF"
+RMDir: "$INSTDIR"
+!insertmacro: _Else
+!insertmacro: end of _Else
+Delete: "$INSTDIR\*"
+Delete: "$INSTDIR\Images\*"
+RMDir: "$INSTDIR\Images"
+Delete: "$INSTDIR\uninstall.exe"
+RMDir: "$INSTDIR"
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+Delete: "$SMPROGRAMS\HoMIWpf\HoMIWpf.lnk"
+Delete: "$SMPROGRAMS\HoMIWpf"
+SectionEnd
+Function: "nsDialogsPage"
+!insertmacro: Log_String
+DetailPrint: "Function nsDialogsPage"
+FileWrite: Function nsDialogsPage
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: MUI_HEADER_TEXT
+!insertmacro: end of MUI_HEADER_TEXT
+Plugin Command: Create 1018
+Pop: $Dialog
+!insertmacro: _If
+!insertmacro: end of _If
+Abort: ""
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _If
+!insertmacro: end of _If
+StrCpy $IsComposantChecked "True" () ()
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+!insertmacro: _If
+!insertmacro: end of _If
+GetDlgItem: output=$0 dialog=$HWNDPARENT item=1
+EnableWindow: handle=$0 enable=1
+!insertmacro: _Else
+!insertmacro: end of _Else
+MessageBox: 16: "ERREUR : Aucun composant HoMIDoM n'est séléctionné !
+La suite de l'installation est impossible.
+
+Veuillez selectionner au moins un composant."
+GetDlgItem: output=$0 dialog=$HWNDPARENT item=1
+EnableWindow: handle=$0 enable=0
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+StrCpy $optInstallAsService "1" () ()
+StrCpy $optCreateStartMenuShortcuts "1" () ()
+Plugin Command: CreateControl BUTTON 0x40000000|0x10000000|0x04000000|0x00010000|0x00000000|0x00000C00|0x00000003|0x00002000 0 0 0u 100% 10u Créer les raccourçis dans le menu Démarrer
+Pop: $chkCreateStartMenuShortcuts_Handle
+!insertmacro: _If
+!insertmacro: end of _If
+!insertmacro: __NSD_Check
+!insertmacro: __NSD_SetState
+SendMessage:($chkCreateStartMenuShortcuts_Handle,0x00F1,1,0)
+!insertmacro: end of __NSD_SetState
+!insertmacro: end of __NSD_Check
+!insertmacro: _EndIf
+!insertmacro: end of _EndIf
+Plugin Command: Show
+FunctionEnd
+Function: "nsDialogsPageLeave"
+!insertmacro: Log_String
+DetailPrint: "Function nsDialogsPageLeave"
+FileWrite: Function nsDialogsPageLeave
+->$hFileLog
+!insertmacro: end of Log_String
+!insertmacro: __NSD_GetState
+SendMessage:(->$optCreateStartMenuShortcuts)($chkCreateStartMenuShortcuts_Handle,0x00F0,0,0)
+!insertmacro: end of __NSD_GetState
+FunctionEnd
+Function: "WriteUnInstaller"
+!insertmacro: Log_String
+DetailPrint: "[Function WriteUnInstaller]"
+FileWrite: [Function WriteUnInstaller]
+->$hFileLog
+!insertmacro: end of Log_String
+Plugin Command: show /set 76 Installation d'HoMIDoM : Mise à jour de la base de registre.
+WriteRegStr: HKLM\Software\HoMIWpf\InstallDir=$INSTDIR
+!insertmacro: GetSizeCall
+!insertmacro: end of GetSizeCall
+IntFmt: $0->$0 (fmt:0x%08X)
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\DisplayName=HoMIWpf
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\Publisher=HoMIWpf
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\DisplayIcon=$INSTDIR\Images\icone.ico
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\Comments=HoMIDoM, la solution gratuite et multi-technologie de domotique
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\DisplayVersion=1.3.0.0
+WriteRegStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\UninstallString="$INSTDIR\uninstall.exe"
+WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\NoModify=1
+WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\NoRepair=1
+WriteRegExpandStr: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\HelpLink=http://www.homidom.com
+WriteRegDWORD: HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\HoMIWpf\EstimatedSize=$0
+WriteUninstaller: "uninstall.exe"
+Plugin Command: destroy
+FunctionEnd
+
+Processed 1 file, writing output:
+Adding plug-ins initializing function... Done!
+Processing pages... Done!
+Removing unused resources... Done!
+Generating language tables... Done!
+Generating uninstaller... Done!
+
+Output: "C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\HomiWpf_Install\Packages\HoMIWpf.Setup.1.3.0.0_Full_x86_x64_RELEASE.exe"
+Install: 7 pages (448 bytes), 8 sections (6 required) (8384 bytes), 1495 instructions (41860 bytes), 718 strings (50590 bytes), 1 language table (398 bytes).
+Uninstall: 3 pages (192 bytes), 
+1 section (1048 bytes), 367 instructions (10276 bytes), 200 strings (3618 bytes), 1 language table (250 bytes).
+Datablock optimizer saved 676297 bytes (~7.6%).
+
+Using zlib compression.
+
+EXE header size:               41472 / 35840 bytes
+Install code:                  24700 / 102056 bytes
+Install data:                8016571 / 13547974 bytes
+Uninstall code+data:           98744 / 101513 bytes
+CRC (0xAF12806B):                  4 / 4 bytes
+
+Total size:                  8181491 / 13787387 bytes (59.3%)

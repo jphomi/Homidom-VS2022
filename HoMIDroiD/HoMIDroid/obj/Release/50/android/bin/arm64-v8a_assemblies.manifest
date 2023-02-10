@@ -1,0 +1,13 @@
+Hash 32     Hash 64             Blob ID  Blob idx  Name
+0x95c40b1d  0x2e2a1517568e80d5  000      0000      HoMIDroid
+0xc8a662e9  0x77b654e585b55834  000      0001      Java.Interop
+0xcf3163e6  0x01accec39cafe242  000      0002      Mono.Android
+0x1bc4415d  0xe99c30c1484d7f4f  000      0003      mscorlib
+0xf76edc75  0x98f9bc61168392ac  000      0004      System.Core
+0x41761b2c  0xe03056ea4e39aa26  000      0005      System
+0x0de07cb4  0x1fb3d1f42fd4249a  000      0006      System.Web.Services
+0xcc6479a0  0x992e31d0412bf7fc  000      0007      System.Xml
+0x132b30dd  0x31042a9aade235bb  000      0008      System.Numerics
+0xc197c562  0x8ac2470b209ebae3  000      0009      Mono.Security
+0xd556f045  0x3194576a63650740  000      0010      I18N
+0x99db1da0  0x022b428a125098f1  000      0011      I18N.West

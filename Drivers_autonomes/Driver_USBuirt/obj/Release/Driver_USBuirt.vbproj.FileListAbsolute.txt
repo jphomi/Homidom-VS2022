@@ -1,0 +1,9 @@
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\RELEASE\Drivers\Driver_USBuirt.dll
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\RELEASE\Drivers\Driver_USBuirt.pdb
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\RELEASE\Drivers\Driver_USBuirt.xml
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_USBuirt\obj\Release\Driver_USBuirt.vbprojAssemblyReference.cache
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_USBuirt\obj\Release\Driver_USBuirt.Resources.resources
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_USBuirt\obj\Release\Driver_USBuirt.vbproj.GenerateResource.cache
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_USBuirt\obj\Release\Driver_USBuirt.dll
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_USBuirt\obj\Release\Driver_USBuirt.xml
+C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_USBuirt\obj\Release\Driver_USBuirt.pdb
