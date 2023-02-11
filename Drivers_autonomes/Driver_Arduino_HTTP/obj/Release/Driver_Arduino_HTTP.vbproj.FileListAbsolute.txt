@@ -25,3 +25,13 @@ C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Arduino_HTTP\obj\
 C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.xml
 C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.pdb
 C:\Users\mll\Documents\GitHub\JP-Homidom-VS2019\Drivers\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.vbprojAssemblyReference.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\RELEASE\Drivers\Driver_Arduino_HTTP.dll
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\RELEASE\Drivers\Driver_Arduino_HTTP.pdb
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\RELEASE\Drivers\Driver_Arduino_HTTP.xml
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\Drivers_autonomes\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.vbproj.AssemblyReference.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\Drivers_autonomes\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.Resources.resources
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\Drivers_autonomes\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.vbproj.GenerateResource.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\Drivers_autonomes\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.vbproj.CoreCompileInputs.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\Drivers_autonomes\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.dll
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\Drivers_autonomes\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.xml
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\Drivers_autonomes\Driver_Arduino_HTTP\obj\Release\Driver_Arduino_HTTP.pdb

@@ -41,3 +41,16 @@ C:\Users\mll\Documents\GitHub\JP-Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.dll
 C:\Users\mll\Documents\GitHub\JP-Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.xml
 C:\Users\mll\Documents\GitHub\JP-Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.pdb
 C:\Users\mll\Documents\GitHub\JP-Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.vbproj.AssemblyReference.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\RELEASE\HoMIDom.dll.config
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\RELEASE\HoMIDom.dll
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\RELEASE\HoMIDom.pdb
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\RELEASE\HoMIDom.xml
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.vbproj.AssemblyReference.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.vbproj.SuggestedBindingRedirects.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.Resources.resources
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.vbproj.GenerateResource.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.vbproj.CoreCompileInputs.cache
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.vbproj.CopyComplete
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.dll
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.xml
+C:\Users\mll\Documents\GitHub\Homidom-VS2022\HoMIDom\obj\Release\HoMIDom.pdb

@@ -317,7 +317,7 @@ Public Class Driver_Arduino_HTTP
     End Sub
 
     ''' <summary>Intérroger un device</summary>
-    ''' <param name="Objet">Objet représetant le device à interroger</param>
+    ''' <param name="Objet">Objet représente le device à interroger</param>
     ''' <remarks>pas utilisé</remarks>
     Public Sub Read(ByVal Objet As Object) Implements HoMIDom.HoMIDom.IDriver.Read
         Try

@@ -2,6 +2,7 @@
 Imports System.IO
 Imports System.Net
 Imports System.Net.Sockets
+Imports System.Security.Cryptography
 Imports System.Threading
 Imports System.Xml
 
@@ -311,7 +312,6 @@ Namespace HoMIDom
                             flagcmd = True
                         End If
                     End If
-
                     If flagcmd Then
                         Select Case _cmd
                             Case "ok"

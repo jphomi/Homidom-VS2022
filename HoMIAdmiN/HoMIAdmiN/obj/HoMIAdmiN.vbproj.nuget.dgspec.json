@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mll\\Documents\\GitHub\\JP-Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\HoMIAdmiN.vbproj": {}
+    "C:\\Users\\mll\\Documents\\GitHub\\Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\HoMIAdmiN.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\mll\\Documents\\GitHub\\JP-Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\HoMIAdmiN.vbproj": {
+    "C:\\Users\\mll\\Documents\\GitHub\\Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\HoMIAdmiN.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mll\\Documents\\GitHub\\JP-Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\HoMIAdmiN.vbproj",
+        "projectUniqueName": "C:\\Users\\mll\\Documents\\GitHub\\Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\HoMIAdmiN.vbproj",
         "projectName": "HoMIAdmiN",
-        "projectPath": "C:\\Users\\mll\\Documents\\GitHub\\JP-Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\HoMIAdmiN.vbproj",
+        "projectPath": "C:\\Users\\mll\\Documents\\GitHub\\Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\HoMIAdmiN.vbproj",
         "packagesPath": "C:\\Users\\mll\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mll\\Documents\\GitHub\\JP-Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\obj\\",
+        "outputPath": "C:\\Users\\mll\\Documents\\GitHub\\Homidom-VS2022\\HoMIAdmiN\\HoMIAdmiN\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\mll\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net461"

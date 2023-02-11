@@ -8424,6 +8424,15 @@ Namespace HoMIDom
 
                 x = ReturnDeviceById(IdSrv, DeviceId)
 
+                If InStr(Action.Nom, "=") <> 0 Then
+                    Dim act As String = Action.Nom
+                    Action.Nom = Mid(act, 1, InStr(act, "=") - 1)
+                    act = Mid(act, InStr(act, "=") + 1, Len(act))
+                    Dim devActionParameter As DeviceAction.Parametre = New DeviceAction.Parametre With {.Nom = "Value", .Value = Mid(act, 1, Len(act))}
+                    Action.Parametres.Add(devActionParameter)
+                    ' Log(Server.TypeLog.DEBUG, Server.TypeSource.SERVEUR, "ExecuteDevicecommand", Action.Nom & " va être lancée pour le composant : " & x.Name & "param " & act)
+                End If
+
                 If x IsNot Nothing Then
                     'On vérifie si l'action existe avant de la lancer
                     Try

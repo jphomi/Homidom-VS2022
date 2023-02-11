@@ -4,6 +4,7 @@ Imports HoMIDom.HoMIDom.Device
 Imports System.Net
 Imports System.IO
 Imports System.Xml
+Imports STRGS = Microsoft.VisualBasic.Strings
 
 <Serializable()> Public Class Driver_http
     Implements HoMIDom.HoMIDom.IDriver
@@ -38,6 +39,8 @@ Imports System.Xml
     Dim _IdSrv As String 'Id du Serveur (pour autoriser à utiliser des commandes)
     Dim _DeviceCommandPlus As New List(Of HoMIDom.HoMIDom.Device.DeviceCommande) 'Liste des commandes avancées du driver
     Dim _AutoDiscover As Boolean = False
+
+    Dim _DEBUG As Boolean = False
 
 #End Region
 
@@ -541,130 +544,137 @@ Imports System.Xml
                         End If
                     End If
                 Case "GENERIQUEVALUE"
-                    If Trim(UCase(Objet.Modele)) = "IPX800" Then
+                    Select Case True
+                        Case Trim(UCase(Objet.Modele)) = "ARDUINO"
+                            Dim url As String = "http://" & Objet.Adresse2
+                            Dim elmt As String = "read_capteur"
+                            Objet.Value = GET_IPX800(url, elmt)
+                            WriteLog("DBG: Read, Objet.Value " & Objet.Value)
 
-                        Dim idx As Integer = CInt(Objet.Adresse1)
-                        If idx < 0 Or idx > 3 Then
-                            _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: l'adresse du device (Adresse1) doit être comprise entre 0 et 3 pour une entrée analogique")
-                            Exit Sub
-                        End If
-                        Dim url As String = "http://" & Objet.Adresse2
-                        Dim elmt As String = "analog" & idx
-                        Objet.Value = GET_IPX800(url, elmt)
-                    ElseIf Trim(UCase(Objet.Modele)) = "ECODEVICE" Then
-                        'Dim idx As String = Objet.Adresse1
-                        'Dim url As String = "http://" & Objet.Adresse2 & "/teleinfo.xml"
-                        'Dim objectretour As Object = GET_ECODEVICE(url, idx)
-                        'If IsNumeric(objectretour) Then
-                        '    Objet.Value = CDbl(objectretour)
-                        'Else
-                        '    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: " & objectretour & " n'est pas au bon format pour " & Objet.Name & "(GENERIQUEVALUE)")
-                        'End If
-                        GET_ECODEVICE2(Objet)
-                    Else
-                        _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le type GENERIQUEVALUE n'est pas géré par " & Objet.Modele)
-                    End If
+                        Case Trim(UCase(Objet.Modele)) = "IPX800"
+                            Dim idx As Integer = CInt(Objet.Adresse1)
+                            If idx < 0 Or idx > 3 Then
+                                _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: l'adresse du device (Adresse1) doit être comprise entre 0 et 3 pour une entrée analogique")
+                                Exit Sub
+                            End If
+                            Dim url As String = "http://" & Objet.Adresse2
+                            Dim elmt As String = "analog" & idx
+                            Objet.Value = GET_IPX800(url, elmt)
+                        Case Trim(UCase(Objet.Modele)) = "ECODEVICE"
+                            'Dim idx As String = Objet.Adresse1
+                            'Dim url As String = "http://" & Objet.Adresse2 & "/teleinfo.xml"
+                            'Dim objectretour As Object = GET_ECODEVICE(url, idx)
+                            'If IsNumeric(objectretour) Then
+                            '    Objet.Value = CDbl(objectretour)
+                            'Else
+                            '    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: " & objectretour & " n'est pas au bon format pour " & Objet.Name & "(GENERIQUEVALUE)")
+                            'End If
+                            GET_ECODEVICE2(Objet)
+                        Case Else
+                            _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le type GENERIQUEVALUE n'est pas géré par " & Objet.Modele)
+
+                    End Select
                 Case "GENERIQUESTRING"
-                    If Trim(UCase(Objet.Modele)) = "RSS" Then
+                            If Trim(UCase(Objet.Modele)) = "RSS" Then
 
-                        If String.IsNullOrEmpty(Objet.Adresse1) Or String.IsNullOrEmpty(Objet.Adresse2) Then
-                            _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: les adresses du device Adresse1 (adresse http du flux rss) et Adresse2 (nom de l'item à lire) doivent être renseignés")
+                                If String.IsNullOrEmpty(Objet.Adresse1) Or String.IsNullOrEmpty(Objet.Adresse2) Then
+                                    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: les adresses du device Adresse1 (adresse http du flux rss) et Adresse2 (nom de l'item à lire) doivent être renseignés")
+                                    Exit Sub
+                                End If
+
+                                Dim xmlDoc As New XmlDocument()
+                                xmlDoc.Load(Objet.Adresse1)
+                                Dim itemNodes As XmlNodeList = xmlDoc.SelectNodes("//rss/channel/item")
+                                Dim result As String = ""
+                                For Each itemNode As XmlNode In itemNodes
+                                    Dim titleNode As XmlNode = itemNode.SelectSingleNode(Objet.Adresse2)
+                                    'Modif JPhomi, suppression de vbCrLf
+                                    result &= titleNode.InnerText ' & vbCrLf
+                                Next
+                                Objet.Value = result
+                            ElseIf Trim(UCase(Objet.Modele)) = "ECODEVICE" Then
+                                'Dim idx As String = Objet.Adresse1
+                                'Dim url As String = "http://" & Objet.Adresse2 & "/teleinfo.xml"
+                                'Dim objectretour As Object = GET_ECODEVICE(url, idx)
+                                'Objet.Value = CDbl(objectretour)
+                                GET_ECODEVICE2(Objet)
+                            ElseIf Trim(UCase(Objet.Modele)) = "VIGILANCE" Then
+
+                                Dim _departement As Integer = 0
+                                Dim item As String = ""
+
+                                If String.IsNullOrEmpty(Objet.Adresse1) Or String.IsNullOrEmpty(Objet.Adresse2) Then
+                                    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: les adresses du device Adresse1 (département) et Adresse2 (niveau, alerte, risque, crues) doivent être renseignés")
+                                    Exit Sub
+                                End If
+                                If IsNumeric(Objet.Adresse1) = False Then
+                                    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: l'Adresse1 doit comporter un chiffre représentant le département sur 2 chiffres")
+                                    Exit Sub
+                                Else
+                                    _departement = Objet.Adresse1
+                                End If
+
+                                item = Objet.Adresse2.ToString.ToLower
+
+                                Dim doc As New XmlDocument
+                                Dim nodes As XmlNodeList
+                                Dim niveau As String = ""
+                                Dim alerte As String = ""
+                                Dim risque As String = ""
+                                Dim crues As String = ""
+
+                                _Server.Log(TypeLog.DEBUG, TypeSource.DRIVER, "Read Vigilance", "Chargement de  http://www2.fmaurel.fr/data/carte_vigilance_meteo.xml")
+                                doc = New XmlDocument()
+                                Dim url As New Uri("http://www2.fmaurel.fr/data/carte_vigilance_meteo.xml")
+                                Dim Request As HttpWebRequest = CType(HttpWebRequest.Create(url), System.Net.HttpWebRequest)
+                                ' Request.UserAgent = "Mozilla/5.0 (windows; U; windows NT 5.1; fr; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7"
+                                Dim response As Net.HttpWebResponse = CType(Request.GetResponse(), Net.HttpWebResponse)
+
+                                doc.Load(response.GetResponseStream)
+                                nodes = doc.SelectNodes("/vigilance/dep_" & _departement)
+                                For Each node As XmlNode In nodes
+                                    For Each _child As XmlNode In node
+                                        Select Case _child.Name
+                                            Case item : Objet.Value = _child.FirstChild.Value 'niveau/alerte/risque/crues
+                                        End Select
+                                    Next
+                                Next
+
+                            Else
+                                _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le type GENERIQUESTRING n'est pas géré par " & Objet.Modele)
+                            End If
+                        Case "ENERGIEINSTANTANEE"
+                            If Trim(UCase(Objet.Modele)) = "ECODEVICE" Then
+                                'Dim idx As String = Objet.Adresse1
+                                'Dim url As String = "http://" & Objet.Adresse2 & "/teleinfo.xml"
+                                'Dim objectretour As Object = GET_ECODEVICE(url, idx)
+                                'If IsNumeric(objectretour) Then
+                                '    Objet.Value = CDbl(objectretour)
+                                'Else
+                                '    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: " & objectretour & " n'est pas au bon format pour " & Objet.Name & "(ENERGIEINSTANTANEE)")
+                                'End If
+                                GET_ECODEVICE2(Objet)
+                            Else
+                                _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le type GENERIQUEVALUE n'est pas géré par " & Objet.Modele)
+                            End If
+                        Case "ENERGIETOTALE"
+                            If Trim(UCase(Objet.Modele)) = "ECODEVICE" Then
+                                'Dim idx As String = Objet.Adresse1
+                                'Dim url As String = "http://" & Objet.Adresse2 & "/teleinfo.xml"
+                                'Dim objectretour As Object = GET_ECODEVICE(url, idx)
+                                'If IsNumeric(objectretour) Then
+                                '    Objet.Value = CDbl(objectretour)
+                                'Else
+                                '    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: " & objectretour & " n'est pas au bon format pour " & Objet.Name & "(ENERGIEINSTANTANEE)")
+                                'End If
+                                GET_ECODEVICE2(Objet)
+                            Else
+                                _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le type GENERIQUEVALUE n'est pas géré par " & Objet.Modele)
+                            End If
+                        Case Else
+                            _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le Device n'est pas reconnu pour ce type " & Objet.Type)
                             Exit Sub
-                        End If
-
-                        Dim xmlDoc As New XmlDocument()
-                        xmlDoc.Load(Objet.Adresse1)
-                        Dim itemNodes As XmlNodeList = xmlDoc.SelectNodes("//rss/channel/item")
-                        Dim result As String = ""
-                        For Each itemNode As XmlNode In itemNodes
-                            Dim titleNode As XmlNode = itemNode.SelectSingleNode(Objet.Adresse2)
-                            'Modif JPhomi, suppression de vbCrLf
-                            result &= titleNode.InnerText ' & vbCrLf
-                        Next
-                        Objet.Value = result
-                    ElseIf Trim(UCase(Objet.Modele)) = "ECODEVICE" Then
-                        'Dim idx As String = Objet.Adresse1
-                        'Dim url As String = "http://" & Objet.Adresse2 & "/teleinfo.xml"
-                        'Dim objectretour As Object = GET_ECODEVICE(url, idx)
-                        'Objet.Value = CDbl(objectretour)
-                        GET_ECODEVICE2(Objet)
-                    ElseIf Trim(UCase(Objet.Modele)) = "VIGILANCE" Then
-
-                        Dim _departement As Integer = 0
-                        Dim item As String = ""
-
-                        If String.IsNullOrEmpty(Objet.Adresse1) Or String.IsNullOrEmpty(Objet.Adresse2) Then
-                            _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: les adresses du device Adresse1 (département) et Adresse2 (niveau, alerte, risque, crues) doivent être renseignés")
-                            Exit Sub
-                        End If
-                        If IsNumeric(Objet.Adresse1) = False Then
-                            _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: l'Adresse1 doit comporter un chiffre représentant le département sur 2 chiffres")
-                            Exit Sub
-                        Else
-                            _departement = Objet.Adresse1
-                        End If
-
-                        item = Objet.Adresse2.ToString.ToLower
-
-                        Dim doc As New XmlDocument
-                        Dim nodes As XmlNodeList
-                        Dim niveau As String = ""
-                        Dim alerte As String = ""
-                        Dim risque As String = ""
-                        Dim crues As String = ""
-
-                        _Server.Log(TypeLog.DEBUG, TypeSource.DRIVER, "Read Vigilance", "Chargement de  http://www2.fmaurel.fr/data/carte_vigilance_meteo.xml")
-                        doc = New XmlDocument()
-                        Dim url As New Uri("http://www2.fmaurel.fr/data/carte_vigilance_meteo.xml")
-                        Dim Request As HttpWebRequest = CType(HttpWebRequest.Create(url), System.Net.HttpWebRequest)
-                        ' Request.UserAgent = "Mozilla/5.0 (windows; U; windows NT 5.1; fr; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7"
-                        Dim response As Net.HttpWebResponse = CType(Request.GetResponse(), Net.HttpWebResponse)
-
-                        doc.Load(response.GetResponseStream)
-                        nodes = doc.SelectNodes("/vigilance/dep_" & _departement)
-                        For Each node As XmlNode In nodes
-                            For Each _child As XmlNode In node
-                                Select Case _child.Name
-                                    Case item : Objet.Value = _child.FirstChild.Value 'niveau/alerte/risque/crues
-                                End Select
-                            Next
-                        Next
-
-                    Else
-                        _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le type GENERIQUESTRING n'est pas géré par " & Objet.Modele)
-                    End If
-                Case "ENERGIEINSTANTANEE"
-                    If Trim(UCase(Objet.Modele)) = "ECODEVICE" Then
-                        'Dim idx As String = Objet.Adresse1
-                        'Dim url As String = "http://" & Objet.Adresse2 & "/teleinfo.xml"
-                        'Dim objectretour As Object = GET_ECODEVICE(url, idx)
-                        'If IsNumeric(objectretour) Then
-                        '    Objet.Value = CDbl(objectretour)
-                        'Else
-                        '    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: " & objectretour & " n'est pas au bon format pour " & Objet.Name & "(ENERGIEINSTANTANEE)")
-                        'End If
-                        GET_ECODEVICE2(Objet)
-                    Else
-                        _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le type GENERIQUEVALUE n'est pas géré par " & Objet.Modele)
-                    End If
-                Case "ENERGIETOTALE"
-                    If Trim(UCase(Objet.Modele)) = "ECODEVICE" Then
-                        'Dim idx As String = Objet.Adresse1
-                        'Dim url As String = "http://" & Objet.Adresse2 & "/teleinfo.xml"
-                        'Dim objectretour As Object = GET_ECODEVICE(url, idx)
-                        'If IsNumeric(objectretour) Then
-                        '    Objet.Value = CDbl(objectretour)
-                        'Else
-                        '    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: " & objectretour & " n'est pas au bon format pour " & Objet.Name & "(ENERGIEINSTANTANEE)")
-                        'End If
-                        GET_ECODEVICE2(Objet)
-                    Else
-                        _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le type GENERIQUEVALUE n'est pas géré par " & Objet.Modele)
-                    End If
-                Case Else
-                    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: Le Device n'est pas reconnu pour ce type " & Objet.Type)
-                    Exit Sub
-            End Select
+                    End Select
 
         Catch ex As Exception
             _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " Read", "Erreur: " & ex.ToString)
@@ -996,67 +1006,6 @@ Imports System.Xml
             Loop
 
             SR.Close()
-            'FileOpen(1, "IPX800.xml", OpenMode.Input) ' Ouvre en lecture.
-
-            'While Not EOF(1) ' Boucler jusqu'à la fin du fichier
-            '    Line = LineInput(1) ' Lire chaque ligne
-            '    Dim a As String = "<" & Element & ">"
-            '    Dim b As String = Trim(Line)
-            '    If b.StartsWith(a) Then
-            '        Dim idx1 As Integer = InStr(2, b, ">")
-            '        Dim idx2 As Integer = InStr(idx1, b, "<")
-            '        If idx1 > 0 And idx2 > 0 And idx2 > idx1 Then
-            '            Dim idx3 As Integer = idx1 + 1
-            '            Dim c As String = ""
-            '            Do While Mid(b, idx3, 1) <> "<"
-            '                c &= Mid(b, idx3, 1)
-            '                idx3 += 1
-            '            Loop
-            '            _Server.Log(TypeLog.DEBUG, TypeSource.DRIVER, Me.Nom & " GET_IPX800", "Trouvé " & c)
-            '            retour = c
-            '            If IsNumeric(retour) = False Then
-            '                If LCase(retour.ToString) = "up" Then
-            '                    retour = 1
-            '                Else
-            '                    retour = 0
-            '                End If
-            '            End If
-            '        End If
-            '    Else
-            '        _Server.Log(TypeLog.DEBUG, TypeSource.DRIVER, Me.Nom & " GET_IPX800", "ligne: " & b)
-            '    End If
-            'End While
-            'FileClose(1) ' Fermer.
-            'File.Delete("IPX800.xml")
-
-            'nodes = doc.SelectNodes("response/")
-
-            'If nodes.Count > 0 Then
-            '    For Each node As XmlNode In nodes
-            '        _Server.Log(TypeLog.DEBUG, TypeSource.DRIVER, Me.Nom & " GET_IPX800", "Node " & node.Name & " Value=" & node.Value)
-            '        If Trim(LCase(node.Name)) = Trim(LCase(Element)) Then
-            '            flag = True
-            '            retour = node.Value
-            '            If IsNumeric(retour) = False Then
-            '                If LCase(retour.ToString) = "up" Then
-            '                    retour = 1
-            '                Else
-            '                    retour = 0
-            '                End If
-            '            End If
-            '            Exit For
-            '        End If
-            '    Next
-            '    If flag = False Then
-            '        _Server.Log(TypeLog.DEBUG, TypeSource.DRIVER, Me.Nom & " GET_IPX800", "l'élément " & Element & " n'a pas été trouvé en l'envoyant à l'adresse " & Adresse & "/status.xml")
-            '    End If
-            'Else
-            '    _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " GET_IPX800", "Aucun élément n'a été trouvé")
-            'End If
-
-            'doc = Nothing
-            'nodes = Nothing
-
             Return retour
         Catch ex As Exception
             _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " GET_IPX800", ex.Message)
@@ -1197,5 +1146,39 @@ Imports System.Xml
             _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " SEND_ARDUINO", ex.Message)
         End Try
     End Sub
+
+    Public Function GET_ARDUINO(ByVal Adresse As String, ByVal Element As String) As Object
+        Try
+            Dim reader As StreamReader = Nothing
+            Dim responsebodystr As String = ""
+            Dim request As WebRequest = WebRequest.Create(Command)
+            _Server.Log(TypeLog.DEBUG, TypeSource.DRIVER, Me.Nom & " SEND_ARDUINO", "Commande envoyée: " & Command())
+            Dim response As WebResponse = request.GetResponse()
+            reader = New StreamReader(response.GetResponseStream())
+            responsebodystr = reader.ReadToEnd
+            WriteLog("DBG: Get_Arduino, " & responsebodystr)
+            reader.Close()
+
+        Catch ex As Exception
+            _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " SEND_ARDUINO", ex.Message)
+        End Try
+    End Function
 #End Region
+
+    Private Sub WriteLog(ByVal message As String)
+        Try
+            'utilise la fonction de base pour loguer un event
+            If STRGS.InStr(message, "DBG:") > 0 Then
+                If _DEBUG Then
+                    _Server.Log(TypeLog.DEBUG, TypeSource.DRIVER, Me.Nom, STRGS.Right(message, message.Length - 5))
+                End If
+            ElseIf STRGS.InStr(message, "ERR:") > 0 Then
+                _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom, STRGS.Right(message, message.Length - 5))
+            Else
+                _Server.Log(TypeLog.INFO, TypeSource.DRIVER, Me.Nom, message)
+            End If
+        Catch ex As Exception
+            _Server.Log(TypeLog.ERREUR, TypeSource.DRIVER, Me.Nom & " WriteLog", ex.Message)
+        End Try
+    End Sub
 End Class
